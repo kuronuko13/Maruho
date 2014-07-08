@@ -49,7 +49,7 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 <!-- [ #headerTop ] -->
 <div id="headerTop">
 <div class="innerBox">
-<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+<!-- <div id="site-description"><?php bloginfo( 'description' ); ?></div> -->
 </div>
 </div><!-- [ /#headerTop ] -->
 
@@ -61,6 +61,7 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 <<?php echo $heading_tag; ?> id="site-title">
 <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo('name'); ?>" rel="home">
 <?php biz_vektor_print_headLogo(); ?>
+<!-- <img src="<?php bloginfo('template_url'); ?>/site-img/" alt="<?php bloginfo('name'); ?>" -->
 </a>
 </<?php echo $heading_tag; ?>>
 <!-- [ #headLogo ] -->
@@ -96,19 +97,19 @@ if ($gMenuExist) { ?>
 <?php } ?>
 
 <?php if (!is_front_page()) { ?>
-<div id="pageTitBnr">
+<!-- <div id="pageTitBnr">
 <div class="innerBox">
 <div id="pageTitInner">
 <?php get_template_part('module_pageTit'); ?>
-</div><!-- [ /#pageTitInner ] -->
-</div>
-</div><!-- [ /#pageTitBnr ] -->
+</div>--> <!-- [ /#pageTitInner ] -->
+<!-- </div> 
+</div> --><!-- [ /#pageTitBnr ] -->
 <!-- [ #panList ] -->
 <div id="panList">
 <div id="panListInner" class="innerBox">
 <?php get_template_part('module_panList'); ?>
 </div>
-</div>
+</div> 
 <!-- [ /#panList ] -->
 <?php } ?>
 
