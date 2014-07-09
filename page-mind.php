@@ -7,47 +7,9 @@ get_header(); ?>
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
 <!-- [ #content ] -->
-<div id="content">
+<div>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-<div id="post-<?php the_ID(); ?>" class="entry-content">
-	<?php the_content(); ?>
-	<?php wp_link_pages( array( 'before' => '<div class="page-link">' . 'Pages:', 'after' => '</div>' ) ); ?>
-</div><!-- .entry-content -->
-<?php
-if ( is_user_logged_in() == TRUE ) { ?>
-<div class="adminEdit">
-<span class="linkBtn linkBtnS linkBtnAdmin"><?php edit_post_link(__('Edit', 'biz-vektor')); ?></span>
-</div>
-<?php } ?>
-<?php endwhile; ?>
-
-<?php // Child page list ?>
-<?php
-	if($post->ancestors){
-		foreach($post->ancestors as $post_anc_id){
-			$post_id = $post_anc_id;
-		}
-	} else {
-		$post_id = $post->ID;
-	}
-	if ($post_id) {
-		$children = wp_list_pages("title_li=&child_of=".$post_id."&echo=0");
-		if ($children) { ?>
-		<div class="childPageBox">
-		<h4><a href="<?php echo get_permalink($post_id); ?>"><?php echo get_the_title($post_id); ?></a></h4>
-		<ul>
-		<?php echo $children; ?>
-		</ul>
-		</div>
-		<?php } ?>
-<?php } ?>
-<?php // /Child page list ?>
-
-<?php get_template_part('module_mainfoot'); ?>
-
-<?php biz_vektor_snsBtns(); ?>
-<?php biz_vektor_fbComments(); ?>
+<img src="<?php bloginfo('template_url'); ?>/images/site-img/contact-img/h_contact.png" alt="お問い合わせ"><br/>
 
 </div>
 <!-- [ /#content ] -->
@@ -72,11 +34,11 @@ if ( is_user_logged_in() == TRUE ) { ?>
 		</ul>
 		</div>
 		<?php } ?>
-<?php } ?>
-	<?php get_sidebar(); ?>
-</div>
+<?php } ?>  
+	<!-- <?php get_sidebar(); ?> -->
+</div>  
 <!-- [ /#sideTower ] -->
-</div>
+</div> 
 <!-- [ /#container ] -->
 
 <?php get_footer(); ?>
