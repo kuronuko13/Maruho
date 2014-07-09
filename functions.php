@@ -729,3 +729,46 @@ function ignore_shortcode( $atts, $content = null ) {
     return null;
 }
 add_shortcode('ignore', 'ignore_shortcode');
+
+/* google map */
+function display_google_map()  {
+	$def = array(
+		'width' => 700,
+		'height' => 320,
+		'lat' => 34.671146,
+		'lng' => 135.473669,
+	);
+
+?>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<div id="mapField" style="width:<?php echo $def['width']; ?>px;height:<?php echo $def['height']; ?>px;"></div>
+<script type="text/javascript">
+	var latlng = new google.maps.LatLng(<?php echo $def['lat']; ?>, <?php echo $def['lng']; ?>);
+	var myOptions = {
+		zoom: 17,
+		center: latlang,
+		scrollwheel: true,
+		scaleControl: true,
+		disableDefaultUI: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+	var map = new google.maps.Map(document.getElementById("mapField"),myOptions);
+	var marker = new.google.maps.Marker({
+		map: map,
+		position: map.getCenter()
+	});
+	/*
+	var contentString = '<?php echo $content; ?>';
+	var infowindow = new google.maps.InfoWindow({
+		content: contentString
+	});
+
+	google.maps.event.addListener(marker,'click',function()  {
+		infowindow.open(map,marker);
+	});
+
+	infowindow.open(map,marker);
+	*/
+</script>
+<?php
+}

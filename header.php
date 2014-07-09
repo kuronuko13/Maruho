@@ -20,6 +20,7 @@ if ( is_singular() && get_option( 'thread_comments' ) )
  * generally use this hook to add elements to <head> such
  * as styles, scripts, and meta tags.
  */
+
 wp_head();
 ?>
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
