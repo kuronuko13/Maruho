@@ -222,7 +222,7 @@ background-color:#fff; }
 /*	#panList
 /*-------------------------------------------*/
 #panList	{ clear:both; font-size:10px; color:#999; padding:0px;display:block; overflow:hidden; width:100%; }
-#panList #panListInner	{ display:block; overflow:hidden; text-align:left; padding:0px 0 10px 0; line-height:24px; border-bottom:1px solid #fff; }
+#panList #panListInner	{ display:block; overflow:hidden; text-align:left; padding:0px 0 10px 0; line-height:24px; border-bottom:0px solid #fff; }
 .home #panList { display:none; }
 #panList ul	{ display:inline-block; }
 #panList ul li	{ display:inline-block; padding-right:5px; }
@@ -524,9 +524,9 @@ form#searchform input#searchsubmit	{ border: 1px solid #5ead3c; background-image
 /*-------------------------------------------*/
 /*	#pagetop
 /*-------------------------------------------*/
-#pagetop	{ display:block; overflow:hidden; clear:both; z-index:5; }
-#pagetop a	{ color: #333; background:url(images/icon_arrow_top_gry.png) center bottom no-repeat #e6e6e6; float:right; display:block; position:relative; padding:5px 15px 5px 15px;font-size:11px; text-decoration:none;margin-bottom:0px;font-family:'Lato', sans-serif; letter-spacing:1px; }
-#pagetop a:hover	{ background:url(images/icon_arrow_top.png) center bottom no-repeat #5ead3c; color:#FFF; }
+/* #pagetop	{ display:block; overflow:hidden; clear:both; z-index:5; } */
+#pagetop a	{ float:right; position:relative; padding:5px 15px 5px 15px; }
+/* #pagetop a:hover	{ background:url(images/icon_arrow_top.png) center bottom no-repeat #5ead3c; color:#FFF; } */
 
 /*-------------------------------------------*/
 /*	#footMenu
