@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: 工事中	
+ * The main template file.
  */
 ?>
 

@@ -2,7 +2,7 @@
 /*
  * Template Name: 会社概要
  */
-get_header(); ?>
+get_header(1); ?>
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox">

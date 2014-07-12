@@ -1,6 +1,6 @@
 <?php
 /**
- * 工事中
+ * Template Name:工事中
  */
 get_header('top'); ?>
 <!-- [ #container ] -->
