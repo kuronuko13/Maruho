@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="edge" />
+<![endif]-->
+<html xmlns:fb="http://ogp.me/ns/fb#" <?php language_attributes(); ?>>
+<head>
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<title><?php getHeadTitle(); ?></title>
+<meta name="description" content="<?php getHeadDescription(); ?>" />
+<meta name="keywords" content="<?php biz_vektor_getHeadKeywords(); ?>" />
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="<?php echo get_template_directory_uri(); ?>/comingsoon.css" rel="stylesheet" type"text/css"  />
+<link rel="start" href="<?php echo site_url(); ?>" title="HOME" />
+<?php
+/* We add some JavaScript to pages with the comment form
+ * to support sites with threaded comments (when in use).
+ */
+if ( is_singular() && get_option( 'thread_comments' ) )
+	wp_enqueue_script( 'comment-reply' );
+/* Always have wp_head() just before the closing </head>
+ * tag of your theme, or you will break many plugins, which
+ * generally use this hook to add elements to <head> such
+ * as styles, scripts, and meta tags.
+ */
+
+wp_head();
+?>
+<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<?php
+/* 子テーマが利用されている場合は旧IEでのCSS上書き用ファイルを出力
+/* 備考:file_exists はセーフモードのサーバーで動作しないため不使用
+*/
+if (get_template_directory_uri() != get_stylesheet_directory_uri()){
+	$stylePathOldIe = get_stylesheet_directory_uri()."/style_oldie.css";
+	print '<!--[if lte IE 8]>'."\n";
+	print '<link rel="stylesheet" type="text/css" media="all" href="'.$stylePathOldIe.'" />'."\n";
+	print '<![endif]-->'."\n";
+} ?>
+<meta id="viewport" name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body <?php body_class(); ?>>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=<?php biz_vektor_fbAppId(); ?>";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="wrap">
+<!-- [ #headerTop ] -->
+<div id="headerTop">
+</div>
+<!-- [ /#header ] -->
