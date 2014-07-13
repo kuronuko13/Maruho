@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(1); ?>
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox">

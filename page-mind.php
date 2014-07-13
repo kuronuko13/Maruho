@@ -2,7 +2,7 @@
 /*
  * Template Name: 想い
  */
-get_header(); ?>
+get_header(1); ?>
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox">

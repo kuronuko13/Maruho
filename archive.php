@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(1); ?>
 <?php $postType = get_post_type();
 if ( !$postType ) {
 	// カスタム投稿タイプで該当記事が0件の場合、 get_post_type()で取得できないのでタクソノミーから取得
