@@ -8,7 +8,7 @@
 
 <!-- [ #post- ] -->
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/blog-img/h_blog.png" alt="ブログ"><br/>
+	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/event-img/h_event.png" alt="イベント"><br/>
 	<time pubdate="pubdate" datetime="<?php the_time('Y-m-d-'); ?>">
 		<?php the_time(get_option('date_format')); ?><br/>
 	</time>
@@ -41,9 +41,9 @@ if ( is_user_logged_in() == TRUE ) { ?>
 <?php biz_vektor_snsBtns(); ?>
 
 <div id="nav-below" class="navigation">
-	<div class="nav-next"><?php next_post_link( '%link', '<< next<br/>%title', TRUE ); ?></div>
-	<a href="<?php echo home_url('/'); ?>/blog/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
-	<div class="nav-previous"><?php previous_post_link( '%link', 'prev >><br/>%title', TRUE ); ?></div>
+	<div class="nav-next"><?php next_post_link( '%link', '<< 次のイベント', TRUE ); ?></div>
+	<a href="<?php echo home_url('/'); ?>/list/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
+	<div class="nav-previous"><?php previous_post_link( '%link', '前のイベント', TRUE ); ?></div>
 </div><!-- #nav-below -->
 
 </div>
@@ -53,15 +53,6 @@ if ( is_user_logged_in() == TRUE ) { ?>
 
 </div>
 <!-- [ /#content ] -->
-
-<!-- [ #sideTower ] -->
-<div id="sideTower">
-	<?php if (get_post_type() == 'post') {
-		get_template_part('module_side_blog');
-	} ?>
-	<?php get_sidebar(); ?>
-</div>
-<!-- [ /#sideTower ] -->
 
 </div>
 <!-- [ /#container ] -->

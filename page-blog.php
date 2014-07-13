@@ -1,4 +1,9 @@
-<?php get_header(1); ?>
+<?php
+/*
+ * Template Name: ブログ
+ */
+get_header(1); ?>
+
 <?php $postType = get_post_type();
 if ( !$postType ) {
 	// カスタム投稿タイプで該当記事が0件の場合、 get_post_type()で取得できないのでタクソノミーから取得
@@ -9,6 +14,8 @@ if ( !$postType ) {
 <div id="container" class="innerBox">
 	<!-- [ #content ] -->
 	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/blog-img/h_blog.png" alt="ブログ"><br/>
+	<?php query_posts('cat=5&post_type=post&paged='.$paged); ?>
+	
 	<?php
 	if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -21,7 +28,7 @@ if ( !$postType ) {
 					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				</header>
 				<section>
-					<?php the_title(); ?><?php the_excerpt(); ?>
+					<?php the_excerpt(); ?>
 				</section>
 			</article>
 		<?php endwhile; ?>
@@ -41,5 +48,5 @@ if ( !$postType ) {
 <!-- [ /#sideTower ] -->
 </div>
 <!-- [ /#container ] -->
-
+<?php wp_reset_query(); ?>
 <?php get_footer(); ?>
