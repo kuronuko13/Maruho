@@ -566,7 +566,7 @@ box-shadow: inset 0 1px 0 white; }
 /*	#footer
 /*-------------------------------------------*/
 #footer	{ margin:0px; padding:20px 0px 20px; display:block; overflow:hidden; font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; }
-#footer	{ text-align:left; background-color:#474761; padding:20px 100px;;; }
+#footer	{ text-align:left; background-color:#474761; padding:20px 100px; clear:both;;; }
 #footer dl#footerOutline	{ margin:0px; line-height:150%;width:220px; }
 #footer dl#footerOutline dt	{ color: #d2d2d3; margin-bottom:8px;line-height:150%; }
 #footer dl#footerOutline dt img	{ margin-bottom:5px;max-width:220px; }
@@ -934,6 +934,15 @@ form#searchform input#searchsubmit	{ width:20%; }
 #container { margin: 0; width: 100%; }
 }
 
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
 
 /* side tower */
 
@@ -1012,7 +1021,11 @@ form#searchform input#searchsubmit	{ width:20%; }
 }
 
 /* top page */
-
+#top-motion {
+	width: 1200px;
+	height: auto;
+	margin: auto;
+}
 #top-content {
 	width: 100%;
 }
@@ -1281,3 +1294,76 @@ form#searchform input#searchsubmit	{ width:20%; }
 	font-size: 14px;
 	color: #48465e;
 }
+
+/* shop-info page */
+#shopinfo-content {
+	width: 100%;
+}
+#shopinfo-content img {
+	margin-bottom: 10px;
+}
+#shopinfo-content .shop-access {
+	width: 450px;
+	height: 450px;
+	float: left;
+}
+#shopinfo-content .shop-access table {
+	width: 100%;
+}
+#shopinfo-content .shop-access table tr td {
+	font-size: 14px;
+	padding: 5px 10px;
+	line-height: 1.5;
+	vertical-align: top;;
+}
+#shopinfo-content .busy-time {
+	width: 200px;
+	float: right;
+	margin-top: 90px;
+}
+#shopinfo-content .busy-time h3 {
+	margin-bottom: 10px;
+}
+#shopinfo-content .busy-time table tr td.right {
+	text-align: right;
+}
+#shopinfo-content .busy-day {
+	width: 200px;
+	float: right;
+	height: 200px;
+	margin: 20px 50px 0 0;;
+}
+#shopinfo-content .busy-day table {
+	width: 100%;
+	height: 100%;
+}
+#shopinfo-content .busy-day table tr td.sub-top {
+	vertical-align: top;
+	font-weight: bold;
+	padding: 20px 0;
+}
+#min-motion {
+	width: 400px;
+	height: 100px;
+	float: right;;
+}
+#shopinfo-content .address {
+	clear: both;
+	width: 320px;
+	float: left;
+}
+#shopinfo-content .address table {
+	width: 100%;
+}
+#shopinfo-content .address table tr td {
+	font-size: 14px;
+	padding: 5px 15px;
+	line-height: 1.5;
+	vertical-align: top;
+}
+#shopinfo-content .location {
+	width: 600px;
+	height: 300px;
+	float: right;
+}
+
