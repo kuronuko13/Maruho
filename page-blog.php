@@ -26,7 +26,9 @@ if ( !$postType ) {
 	<?php if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article class="blog-article">
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large_thumbnail', array('alt' => the_title_attribute('echo=0'), 'title' => the_title_attribute('echo=0'))); ?></a>
+			<a href="<?php the_permalink(); ?>" class="blog-archive">
+				<?php the_post_thumbnail('large_thumbnail', array('alt' => the_title_attribute('echo=0'), 'title' => the_title_attribute('echo=0'))); ?>
+			</a>
 				<header>
 					<time pubdate="pubdate" datetime="<?php the_time('Y-m-d-'); ?>">
 					<?php the_time(get_option('date_format')); ?>
