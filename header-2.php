@@ -38,9 +38,8 @@ jQuery(function(){
     speed: 1000,
     autoHover: true,
     pause: 3000,
-    easing: 'swing',
     displaySlideQty: 3,
-    moveSlideQty: 3
+    moveSlideQty: 4
     });
 });
 </script>
