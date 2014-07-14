@@ -21,8 +21,30 @@ if ( is_singular() && get_option( 'thread_comments' ) )
  * as styles, scripts, and meta tags.
  */
 
+wp_enqueue_style('bxslider-css', get_bloginfo('template_url') . '/js/jquery.bxslider.css');
+wp_enqueue_script('bxSlider', get_bloginfo('template_url') . '/js/jquery.bxslider.min.js',array(jquery));
+
+
 wp_head();
 ?>
+<script type=”text/javascript”>
+jQuery(document).ready(function($){  
+$(function(){
+  $('.bxslider').bxSlider({
+    auto : true,
+    controls: false,
+    mode: 'horizontal',
+    speed: 2000,
+    autoHover: true,
+    pause: 3000,
+    easing: 'swing',
+    displaySlideQty: 3,
+    moveSlideQty: 3 
+  });
+});
+});
+</script>
+
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php
 /* 子テーマが利用されている場合は旧IEでのCSS上書き用ファイルを出力
@@ -35,26 +57,6 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 	print '<![endif]-->'."\n";
 } ?>
 <meta id="viewport" name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-
-<script src=”http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js” type=”text/javascript”></script>
-<script src=”<?php bloginfo(‘template_url’); ?>/js/jquery.bxslider.min.js” type=”text/javascript”></script>
-<script type=”text/javascript”>
-jQuery(document).ready(function($){  
-$(function(){
-  $('.bxslider').bxSlider({
-  	auto : true,
-  	controls: false,
-  	mode: 'horizontal',
-  	speed: 2000,
-  	autoHover: true,
-  	pause: 3000,
-  	easing: 'swing',
-  	displaySlideQty: 3,
-  	moveSlideQty: 3 
-  });
-});
-});
-</script>
 </head>
 
 <body <?php body_class(); ?>>
