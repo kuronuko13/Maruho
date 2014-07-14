@@ -57,20 +57,10 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 <!-- [ #header ] -->
 <div id="header">
 <div id="headerInner" class="innerBox">
-<!-- [ #headLogo ] -->
-<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-<<?php echo $heading_tag; ?> id="site-title">
-<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo('name'); ?>" rel="home">
-<?php biz_vektor_print_headLogo(); ?>
-<!-- <img src="<?php bloginfo('template_url'); ?>/site-img/" alt="<?php bloginfo('name'); ?>" -->
+
+<a href="<?php echo home_url('/'); ?>">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/toplogo.png">
 </a>
-</<?php echo $heading_tag; ?>>
-<!-- [ #headLogo ] -->
-
-<!-- [ #headContact ] -->
-<?php biz_vektor_print_headContact(); ?>
-<!-- [ /#headContact ] -->
-
 
 </div>
 <!-- #headerInner -->
@@ -98,7 +88,7 @@ if ($gMenuExist) { ?>
 <?php } ?>
 
 <!--トップ画像の表示-->
-<div><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/mind-img/img_mind.png"></div>
+<div style="clear:both;" ><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/mind-img/img_mind.png"></div>
 
 <!-- [ #panList ] -->
 <div id="panList">

@@ -15,25 +15,16 @@
 	
 	</div>
 
-	<div id="footMenu">
-	<div id="footMenuInner" class="innerBox">
-	<?php wp_nav_menu( array(
-		'theme_location' => 'FooterNavi',
-		'fallback_cb' => ''
-	) ); ?>
-	</div>
-	</div>
+	
+</div>
+<!-- [ /#footerSection ] -->
+</div>
+<!-- [ /#wrap ] -->
 
-	<!-- [ #footer ] -->
+<!-- [ #footer ] -->
 	<div id="footer">
 	<!-- [ #footerInner ] -->
 	<div id="footerInner" class="innerBox">
-		<dl id="footerOutline">
-		<dt><?php biz_vektor_footerSiteName(); ?></dt>
-		<dd>
-		<?php biz_vektor_print_footContact(); ?>
-		</dd>
-		</dl>
 		<!-- [ #footerSiteMap ] -->
 		<div id="footerSiteMap">
 		<?php wp_nav_menu(
@@ -51,14 +42,14 @@
 	<!-- [ #siteBottom ] -->
 	<div id="siteBottom">
 	<div id="siteBottomInner" class="innerBox">
-	<?php biz_vektor_footerCopyRight(); ?>
+		<p><b><?php biz_vektor_footerSiteName(); ?></b></p>
+		<p>〒555-0025<br>大阪市西区九条南2-16-11</p>
+		<p>TEL: 06-6583-2368<br>Email: xxxxxxxxx@xxxx.xxx</p>
+		<h5>@copyright <?php biz_vektor_footerSiteName(); ?> 2014</h5>
 	</div>
 	</div>
 	<!-- [ /#siteBottom ] -->
-</div>
-<!-- [ /#footerSection ] -->
-</div>
-<!-- [ /#wrap ] -->
+
 <?php wp_footer();?>
 
 <!-- GooglePlusOne -->

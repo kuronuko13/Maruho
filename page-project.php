@@ -9,12 +9,19 @@ get_header(1); ?>
 
 <!-- [ #sideTower ] -->
 <div id="sideTower">
-
+	<h2>事業内容</h2>
+	<ul>
+		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />小売販売</a></li>
+		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />通信販売</a></li>
+		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />飲食店御</a></li>
+		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />立ち飲み</a></li>
+		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />イベント運営</a></li>
+	</ul>
 </div>  
 <!-- [ /#sideTower ] -->
 
 <!-- [ #content ] -->
-<div id="content" class="wide">
+<div id="content-page" class="wide">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	<div id="post-<?php the_ID(); ?>" class="entry-content">
 		<?php the_content(); ?>

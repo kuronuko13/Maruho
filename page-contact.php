@@ -8,7 +8,7 @@ get_header(1); ?>
 <div id="container" class="innerBox">
 <!-- [ #content ] -->
 
-<div id="content" class="wide">
+<div id="content-contact" class="wide">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	<div id="post-<?php the_ID(); ?>" class="entry-content">
 		<?php the_content(); ?>
