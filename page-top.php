@@ -31,6 +31,32 @@ get_header(); ?>
 	常時70種類以上のクラフトビールとこだわりの地酒を取り揃えております。<br/>
 
 	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_calender.png" alt="営業日カレンダー"><br/>
+	<div id="content-page" class="wide">
+	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+	<div id="post-<?php the_ID(); ?>" class="entry-content">
+		<?php the_content(); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . 'Pages:', 'after' => '</div>' ) ); ?>
+	</div><!-- .entry-content -->
+
+	<?php
+	if ( is_user_logged_in() == TRUE ) { ?>
+	<div class="adminEdit">
+	<span class="linkBtn linkBtnS linkBtnAdmin"><?php edit_post_link(__('Edit', 'biz-vektor')); ?></span>
+	</div>
+	<?php } ?>
+
+	<?php biz_vektor_snsBtns(); ?>
+	<?php biz_vektor_fbComments(); ?>
+
+		<?php endwhile; ?>
+	</div>
+
+	営業時間<br/><br/>
+	月〜金：9時〜20時<br/>
+	土：9時〜17時<br/>
+	立飲み：月・水　17時〜20時<br/>
+	※月曜が祝日の週は、営業を金<br/>
+	曜日に振替ます<br/>
 
 	<a href="<?php echo home_url('/'); ?>/list/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_event.png" alt="イベント"></a>
 	<a href="<?php echo home_url('/'); ?>/list/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/btn_ichiran.png" alt="一覧"></a><br/>

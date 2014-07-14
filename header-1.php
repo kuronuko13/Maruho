@@ -58,6 +58,10 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 <div id="header">
 <div id="headerInner" class="innerBox">
 
+<a href="https://www.facebook.com/maruho.sake">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/toppage-img/btn_facebook.png">
+</a>
+
 <a href="<?php echo home_url('/'); ?>">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/toplogo.png">
 </a>

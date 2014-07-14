@@ -11,8 +11,8 @@ get_header(1); ?>
 <div id="sideTower">
 	<h2>会社概要</h2>
 	<ul>
-		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />会社情報</a></li>
-		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />会社沿革</a></li>
+		<li><a href="#comabout-cominfo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />会社情報</a></li>
+		<li><a href="#comabout-history"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />会社沿革</a></li>
 	</ul>
 </div>  
 <!-- [ /#sideTower ] -->

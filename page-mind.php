@@ -11,8 +11,8 @@ get_header(1); ?>
 <div id="sideTower">
 	<h2>想い</h2>
 	<ul>
-		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />使命</a></li>
-		<li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />方針</a></li>
+		<li><a href="#mind-mision"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />使命</a></li>
+		<li><a href="#mind-policy"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />方針</a></li>
 	</ul>
 </div>  
 <!-- [ /#sideTower ] -->
