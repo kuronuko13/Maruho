@@ -46,7 +46,7 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
   js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=<?php biz_vektor_fbAppId(); ?>";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div id="wrap">
+<div id="wrapper">
 <!-- [ #headerTop ] -->
 <div id="headerTop">
 <div class="innerBox">
@@ -54,24 +54,16 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 </div>
 </div><!-- [ /#headerTop ] -->
 
+
+<div id="wrap">
+
 <!-- [ #header ] -->
 <div id="header">
 <div id="headerInner" class="innerBox">
 <!-- [ #headLogo ] -->
-<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-<<?php echo $heading_tag; ?> id="site-title">
-<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo('name'); ?>" rel="home">
-<?php biz_vektor_print_headLogo(); ?>
-<!-- <img src="<?php bloginfo('template_url'); ?>/site-img/" alt="<?php bloginfo('name'); ?>" -->
+<a href="<?php echo home_url('/'); ?>">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/toplogo.png">
 </a>
-</<?php echo $heading_tag; ?>>
-<!-- [ #headLogo ] -->
-
-<!-- [ #headContact ] -->
-<?php biz_vektor_print_headContact(); ?>
-<!-- [ /#headContact ] -->
-
-
 </div>
 <!-- #headerInner -->
 </div>
@@ -97,8 +89,13 @@ if ($gMenuExist) { ?>
 <!-- [ /#gMenu ] -->
 <?php } ?>
 
-<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+</div>
 
+<div id="top-motion">
+<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
+</div>
+
+<div id="wrap">
 <!-- [ #panList ] -->
 <div id="panList">
 <div id="panListInner" class="innerBox">

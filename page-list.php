@@ -13,40 +13,41 @@ if ( !$postType ) {
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
 	<!-- [ #content ] -->
-	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/h_news.png" alt="お知らせ"><br/>
-	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/img_news.png" alt="お知らせ画像"><br/>
+	<div id="news-info">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/h_news.png" alt="お知らせ">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/img_news.png" alt="お知らせ画像">
 	<?php query_posts('cat=6&post_type=post'); ?>
 	<?php
 	if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article>
-				<li>
 					<time pubdate="pubdate" datetime="<?php the_time('Y-m-d-'); ?>">
 					<?php the_time(get_option('date_format')); ?>
 					</time>
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				</li>
 			</article>
 		<?php endwhile; ?>
 	<?php endif;  ?>
 	<?php wp_reset_query(); ?>
-	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/h_event.png" alt="イベント"><br/>
-	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/img_event.png" alt="イベント画像"><br/>
+	</div>
+
+	<div id="event-info">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/h_event.png" alt="イベント">
+	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/img_event.png" alt="イベント画像">
 	<?php query_posts('cat=7&post_type=post'); ?>
 	<?php
 	if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article>
-				<li>
 					<time pubdate="pubdate" datetime="<?php the_time('Y-m-d-'); ?>">
 					<?php the_time(get_option('date_format')); ?>
 					</time>
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				</li>
 			</article>
 		<?php endwhile; ?>
 	<?php endif;  ?>
 	<?php wp_reset_query(); ?>
+	</div>
 <!-- [ /#content ] -->
 </div>
 <!-- [ /#container ] -->

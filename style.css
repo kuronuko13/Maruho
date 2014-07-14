@@ -171,7 +171,7 @@ form#searchform input#searchsubmit	{ padding:6px 10px; }
 #pagetop,
 #footMenu,
 #footer		{ text-align:center;clear: both; }
-.innerBox		{ text-align:left;width:94%; margin:0px 3%;}
+.innerBox		{width:94%; margin:0px 3%; text-align:left;}
 .innerBox img	{ max-width:100%; }
 #main		{ width:100%; margin:0px auto; }
 #main #container	{ overflow:visible; }
@@ -224,7 +224,7 @@ position:relative; }
 #gMenu #gMenuInner	{ overflow:visible; display:block; position:relative;padding:0px;}
 #gMenu #gMenuInner.innerBox	{ margin:0px;width:100%;}
 #gMenu .menu	{ font-size: 13px;list-style: none; margin:0px 0px 0px;padding:0px; display:block; overflow:visible;border-top:1px solid #ccc;}
-#gMenu .menu li { text-shadow:0 1px #ffffff; position: relative;width:100%;display:block;border-bottom:1px solid #ccc; }
+#gMenu .menu li { position: relative;width:100%;display:block;text-shadow:0 1px #ffffff;border-bottom:1px solid #ccc; }
 #gMenu .menu li a	{ background:url(images/arrow_gray.png) right bottom no-repeat; color: #333; display: block; overflow:hidden;padding: 20px 15px 18px; margin:0px; line-height:140%; text-decoration: none; letter-spacing:0px; text-align:left; position:relative; }
 #gMenu .menu li a strong	{ font-weight:bold; }
 #gMenu .menu li a span 		{ color:#5ead3c; display:block; font-size:10px; line-height:140%;letter-spacing:1px; font-family:verdana, Arial, Helvetica, sans-serif; }
@@ -799,7 +799,7 @@ body     { line-height:150%; }
 }
 
 #gMenu .assistive-text { position: absolute; top: -9000px; } /* display:noneだと読み上げない / 横にオフセットするとIEで読み込みまでの間表示される */
-#gMenu .menu li { float: left;width:106px;border-bottom:none; overflow:visible;box-shadow: inset 1px 0px 0px #fff; }
+#gMenu .menu li { float: left;width:106px; overflow:visible;border-bottom: none;box-shadow: inset 1px 0px 0px #fff; }
 #gMenu .menu li a	{ text-align:center;border-right:1px solid #e5e5e5; box-shadow: inset 1px 0px 0px #fff; }
 
 /* IE7のみドロップダウン非表示 */
@@ -1010,6 +1010,121 @@ form#searchform input#searchsubmit	{ width:20%; }
 #content-contact .must {
 	margin: 0;
 }
+
+/* top page */
+
+#top-content {
+	width: 100%;
+}
+#top-content .top-news {
+	width: 160px;
+	float: left;
+	height: 320px;
+	padding: 10px 20px;
+}
+#top-content .top-news .all,
+#top-content .top-event .all {
+	float: right;
+	margin-top: 5px;
+}
+#top-content .top-news article,
+#top-content .top-event article {
+	height: 30px;
+	padding: 10px 5px;
+	border-bottom: 1px dashed #ccc;
+}
+#top-content .top-news article time,
+#top-content .top-event article time {
+	font-size: 12px;
+}
+#top-content .top-news article a,
+#top-content .top-event article a {
+	text-decoration: none;
+	color: #48465e;
+	font-size: 13px;;
+}
+#top-content .top-calendar {
+	width: 200px;
+	float: right;
+	height: 320px;
+	padding: 10px 20px;;
+}
+#calendar-content,
+#wp-calendar {
+	width: 100%;
+	line-height: normal;;
+}
+#top-content .top-calendar h3 {
+	font-size: 14px;
+	margin: 10px 0;
+}
+#top-content .top-calendar .sales tr td.firstChild {
+	text-align: right;
+}
+#wp-calendar tfoot tr td.firstChild {
+	text-align: left;
+}
+#wp-calendar tfoot tr td.lastChild {
+	text-align: right;
+}
+#wp-calendar thead tr th {
+	border-bottom: 1px dashed #999;
+}
+#wp-calendar tfoot tr td {
+	border-top: 1px dashed #999;
+}
+#top-content .top-shop {
+	width: 440px;
+	float: left;
+	height: 320px;
+	padding: 10px 20px;
+}
+#top-content .top-news img,
+#top-content .top-calendar img,
+#top-content .top-shop img,
+#top-content .top-event img,
+#top-content .top-facebook img,
+#top-content .top-faith img,
+#top-content .top-magazine img,
+#top-content .top-beer img {
+	margin-bottom: 10px;
+}
+#top-content .top-shop p {
+	font-size: 12px;
+}
+#top-content .top-event {
+	clear: both;
+	width: 160px;
+	height: 320px;
+	float: left;
+	padding: 10px 20px;
+}
+#top-content .top-facebook {
+	width: 200px;
+	height: 320px;
+	float: right;
+	padding: 10px 20px;
+}
+#top-content .top-faith,
+#top-content .top-magazine {
+	width: 220px;
+	float: left;
+	height: 320px;
+	padding: 10px;
+}
+#top-content .top-faith p,
+#top-content .top-magazine p {
+	font-size: 12px;
+}
+#top-content .top-beer {
+	clear: both;
+	width: 300px;
+}
+
+
+
+/* about the company */
+
 #comabout-cominfo table {
 	width: 500px;
 	margin-bottom: 30px;
@@ -1053,6 +1168,8 @@ form#searchform input#searchsubmit	{ width:20%; }
 	padding: 10px;
 }
 
+
+/* contact */
 #contact p {
 	font-size: 14px;
 }
@@ -1131,5 +1248,36 @@ form#searchform input#searchsubmit	{ width:20%; }
 	font-size: 15px;
 }
 
-
-
+/* list page */
+#news-info {
+	float: left;
+	width: 450px;
+	height: 700px;
+	overflow: hidden;
+}
+#event-info {
+	float: right;
+	width: 450px;
+	height: 700px;
+	overflow: hidden;
+}
+#news-info img,
+#event-info img {
+	margin: 10px 0;
+}
+#news-info article,
+#event-info article {
+	border: 1px solid #efefef;
+	padding: 20px 10px;
+	border-bottom: 1px dashed #999;;
+}
+#news-info article time,
+#event-info article time {
+	margin-right: 20px;
+	font-size: 14px;
+}
+#news-info article a,
+#event-info article a {
+	font-size: 14px;
+	color: #48465e;
+}
