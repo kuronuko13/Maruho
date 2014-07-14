@@ -36,6 +36,25 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 } ?>
 <meta id="viewport" name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 
+<script src=”http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js” type=”text/javascript”></script>
+<script src=”<?php bloginfo(‘template_url’); ?>/js/jquery.bxslider.min.js” type=”text/javascript”></script>
+<script type=”text/javascript”>
+jQuery(document).ready(function($){  
+$(function(){
+  $('.bxslider').bxSlider({
+  	auto : true,
+  	controls: false,
+  	mode: 'horizontal',
+  	speed: 2000,
+  	autoHover: true,
+  	pause: 3000,
+  	easing: 'swing',
+  	displaySlideQty: 3,
+  	moveSlideQty: 3 
+  });
+});
+});
+</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -93,7 +112,7 @@ if ($gMenuExist) { ?>
 <?php } ?>
 
 <!--トップ画像の表示-->
-<div style="clear:both;" ><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/mind-img/img_mind.png"></div>
+<div style="clear:both;" ><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/shopinfo-img/img_shopabout.png"></div>
 
 <!-- [ #panList ] -->
 <div id="panList">

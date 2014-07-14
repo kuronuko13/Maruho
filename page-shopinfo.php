@@ -2,7 +2,7 @@
 /*
  * Template Name: 店舗情報
  */
-get_header(1); ?>
+get_header(2); ?>
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
