@@ -21,8 +21,30 @@ if ( is_singular() && get_option( 'thread_comments' ) )
  * as styles, scripts, and meta tags.
  */
 
+wp_enqueue_style('bxslider-css', get_bloginfo('template_url') . '/js/jquery.bxslider.css');
+wp_enqueue_script('bxSlider', get_bloginfo('template_url') . '/js/jquery.bxslider.min.js',array(jquery));
+
+
 wp_head();
 ?>
+<script>
+jQuery(function(){
+    jQuery('.bxslider').bxSlider({
+    auto : true,
+    autoControls: false,
+    controls: true,
+    pager: false,
+    mode: 'horizontal',
+    speed: 1000,
+    autoHover: true,
+    pause: 3000,
+    easing: 'swing',
+    displaySlideQty: 3,
+    moveSlideQty: 3
+    });
+});
+</script>
+
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php
 /* 子テーマが利用されている場合は旧IEでのCSS上書き用ファイルを出力
