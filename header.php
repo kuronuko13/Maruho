@@ -97,14 +97,8 @@ if ($gMenuExist) { ?>
 <!-- [ /#gMenu ] -->
 <?php } ?>
 
-<?php if (!is_front_page()) { ?>
-<!-- <div id="pageTitBnr">
-<div class="innerBox">
-<div id="pageTitInner">
-<?php get_template_part('module_pageTit'); ?>
-</div>--> <!-- [ /#pageTitInner ] -->
-<!-- </div> 
-</div> --><!-- [ /#pageTitBnr ] -->
+<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/mainvisual.png">
+
 <!-- [ #panList ] -->
 <div id="panList">
 <div id="panListInner" class="innerBox">
@@ -112,19 +106,5 @@ if ($gMenuExist) { ?>
 </div>
 </div> 
 <!-- [ /#panList ] -->
-<?php } ?>
 
-<?php if (is_front_page() && (biz_vektor_slideExist() || get_header_image()) ) { ?>
-<div id="topMainBnr">
-<div id="topMainBnrFrame" class="flexslider">
-<?php if(biz_vektor_slideExist()) { ?>
-	<ul class="slides">
-	<?php biz_vektor_slideBody(); ?>
-	</ul>
-<?php } else { ?>
-	<div class="slideFrame"><img src="<?php header_image(); ?>" alt="" /></div>
-<?php } ?>
-</div>
-</div>
-<?php } ?>
 <div id="main">
