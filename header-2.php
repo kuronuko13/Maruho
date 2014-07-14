@@ -27,21 +27,21 @@ wp_enqueue_script('bxSlider', get_bloginfo('template_url') . '/js/jquery.bxslide
 
 wp_head();
 ?>
-<script type=”text/javascript”>
-jQuery(document).ready(function($){  
-$(function(){
-  $('.bxslider').bxSlider({
+<script>
+jQuery(function(){
+    jQuery('.bxslider').bxSlider({
     auto : true,
-    controls: false,
+    autoControls: false,
+    controls: true,
+    pager: false,
     mode: 'horizontal',
-    speed: 2000,
+    speed: 1000,
     autoHover: true,
     pause: 3000,
     easing: 'swing',
     displaySlideQty: 3,
-    moveSlideQty: 3 
-  });
-});
+    moveSlideQty: 3
+    });
 });
 </script>
 
