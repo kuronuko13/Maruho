@@ -96,7 +96,7 @@ if ($gMenuExist) { ?>
 </div>
 <!-- [ /#gMenu ] -->
 <?php } ?>
-
+<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/mainvisual.png">
 <?php if (!is_front_page()) { ?>
 <!-- <div id="pageTitBnr">
 <div class="innerBox">
