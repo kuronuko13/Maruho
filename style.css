@@ -973,6 +973,10 @@ form#searchform input#searchsubmit	{ width:20%; }
 	font-size: 12px;
 	color: #999;
 }
+#sideBlog {
+	width: 190px;
+	float: right;
+}
 
 /* pages */
 
@@ -1056,13 +1060,13 @@ form#searchform input#searchsubmit	{ width:20%; }
 	margin: 5px 10px;
 }
 #content-contact .wpcf7 input[type="text"] {
-	width: 302px;
+	width: 350px;
 	height: 20px;
 	border-radius: 5px;
 	border: 1px solid #ccc;
 }
 #content-contact .wpcf7 input[type="email"] {
-	width: 304px;
+	width: 354px;
 	height: 24px;
 	border-radius: 5px;;
 	border: 1px solid #ccc;
@@ -1076,4 +1080,10 @@ form#searchform input#searchsubmit	{ width:20%; }
 #content-contact .wpcf7 input[type="image"] {
 	margin: auto;
 	display: block;;
+}
+
+/* blog */
+#container .blog-post {
+	width: 710px;
+	margin: 30px 0;
 }

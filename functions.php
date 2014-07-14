@@ -124,7 +124,13 @@ function biz_vektor_widgets_init() {
 		'before_title' => '<h3 class="localHead">',
 		'after_title' => '</h3>',
 	) );
-
+	register_sidebar( array(
+		'name' => 'Other Sidebar',
+		'before_widget' => '<div class="sideNav%2$s" id="%1$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h2>',
+		'after_title' => '</h2>'
+	));
 
 }
 add_action( 'widgets_init', 'biz_vektor_widgets_init' );
