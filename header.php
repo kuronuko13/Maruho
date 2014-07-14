@@ -97,7 +97,7 @@ if ($gMenuExist) { ?>
 <!-- [ /#gMenu ] -->
 <?php } ?>
 
-<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/mainvisual.png">
+<?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow(); } ?>
 
 <!-- [ #panList ] -->
 <div id="panList">
