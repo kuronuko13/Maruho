@@ -36,6 +36,7 @@ if ( !$postType ) {
 			</article>
 		<?php endwhile; ?>
 	<?php endif;  ?>
+	<?php pagination($additional_loop->max_num_pages); ?>
 	</div>
 	<!-- [ /#content ] -->
 </div>

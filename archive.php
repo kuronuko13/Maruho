@@ -34,18 +34,18 @@ if ( !$postType ) {
 /*-------------------------------------------*/
 /*	Archive description
 /*-------------------------------------------*/
-	if ( is_category() || is_tax() || is_tag() ) {
-		$category_description = term_description();
-	}
-	if ( ! empty( $category_description ) ) 
-		echo '<div class="archive-meta">' . $category_description . '</div>';
+	// if ( is_category() || is_tax() || is_tag() ) {
+	// 	$category_description = term_description();
+	// }
+	// if ( ! empty( $category_description ) ) 
+	// 	echo '<div class="archive-meta">' . $category_description . '</div>';
 	?>
 	<?php
 /*-------------------------------------------*/
 /*	Archive post list
 /*-------------------------------------------*/
-	?>
-	<div class="infoList">
+	//?>
+	<!-- <div class="infoList">
 	<?php
 	$options = biz_vektor_get_theme_options();
 	if ($postType == 'info') : ?>
@@ -75,8 +75,28 @@ if ( !$postType ) {
 		<?php } ?>
 
 	<?php endif; // $postType == 'info' ?>
+	</div> --><!-- [ /.infoList ] -->
+	<?php query_posts($query_string.'post_type=post&posts_per_page=10&paged='.$paged); ?>
+
+	<?php if (have_posts()) : ?>
+		<?php while ( have_posts() ) : the_post(); ?>
+			<article class="blog-article">
+			<a href="<?php the_permalink(); ?>" class="blog-archive">
+				<?php the_post_thumbnail('large_thumbnail', array('alt' => the_title_attribute('echo=0'), 'title' => the_title_attribute('echo=0'))); ?>
+			</a>
+				<header>
+					<time pubdate="pubdate" datetime="<?php the_time('Y-m-d-'); ?>">
+					<?php the_time(get_option('date_format')); ?>
+					</time>
+					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+				</header>
+				<section>
+					<?php the_excerpt(); ?>
+				</section>
+			</article>
+		<?php endwhile; ?>
+	<?php endif;  ?>
 	<?php pagination($additional_loop->max_num_pages); ?>
-	</div><!-- [ /.infoList ] -->
 	</div>
 	<!-- [ /#content ] -->
 
@@ -88,4 +108,5 @@ if ( !$postType ) {
 </div>
 <!-- [ /#container ] -->
 
+<?php wp_reset_query(); ?>
 <?php get_footer(); ?>

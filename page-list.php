@@ -16,7 +16,7 @@ if ( !$postType ) {
 	<div id="news-info">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/h_news.png" alt="お知らせ">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/img_news.png" alt="お知らせ画像">
-	<?php query_posts('cat=6&post_type=post'); ?>
+	<?php query_posts('cat=6&post_type=post&posts_per_page=-1&nopaging=true'); ?>
 	<?php
 	if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -34,7 +34,7 @@ if ( !$postType ) {
 	<div id="event-info">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/h_event.png" alt="イベント">
 	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/img_event.png" alt="イベント画像">
-	<?php query_posts('cat=7&post_type=post'); ?>
+	<?php query_posts('cat=7&post_type=post&posts_per_page=-1&nopaging=true); ?>
 	<?php
 	if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
