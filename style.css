@@ -162,7 +162,7 @@ form#searchform input#searchsubmit	{ padding:6px 10px; }
 .moreLink a			{ text-align:center; margin-top:15px; display:inline-block;overflow:hidden; font-size:11px; line-height:105%;text-decoration:none;background: url(images/arrow_bk_s.png) right bottom no-repeat #efefef; color: #333; border-left: 4px solid #5ead3c; padding: 5px 15px 5px 11px; box-shadow: 0px 1px 2px rgba(0,0,0,0.25); }
 .moreLink a:hover { color:#fff; text-decoration:none !important; background: url(images/arrow_wh_s.png) right bottom no-repeat #666; }
 
-#wrap	{ height:100%;min-height:100%;margin:auto;max-width:980px; }
+#wrap	{ height:100%;min-height:100%;margin:auto;max-width:960px; }
 
 /*-------------------------------------------*/
 /*	レイアウト
@@ -190,7 +190,7 @@ form#searchform input#searchsubmit	{ padding:6px 10px; }
 /*	#header
 /*-------------------------------------------*/
 #header	{ display:block; overflow:hidden; width:250px; padding:0; }
-#header	{ text-align:left; width:250px; padding:0; margin-right:20px; }
+#header	{ text-align:left; width:250px; padding:0; margin-right:10px; }
 #header #site-title { font-size: 24px; line-height:45px; margin:0px;padding-bottom:10px;position:relative; font-weight:lighter; text-align: center; }
 #header #site-title a { color: #000; font-weight: bold; text-decoration: none; }
 #header #site-title a img	{ max-height:60px;margin-top:3px; }
@@ -213,7 +213,6 @@ background-color:transparent;
 display:block;
 border-bottom:none;
 position:relative;
-padding-top:20px;
 height:70px;
 float:left;
  width: 500px; }
@@ -266,7 +265,7 @@ float:left;
 /*	#main
 /*-------------------------------------------*/
 #main	{ display:block; overflow:visible;clear:both; }
-#main { width: 100%; min-height: 900px; max-width: 980px; }
+#main { width: 100%; max-width: 980px; }
 
 /* facebookコメント欄が消えるのでhiddenではなくclearfix */
 #main:before,#main:after { content: ""; display: table; }
@@ -570,7 +569,7 @@ box-shadow: inset 0 1px 0 white; }
 /*	#footer
 /*-------------------------------------------*/
 #footer	{ margin:0px; padding:20px 0px 20px; display:block; overflow:hidden; font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; }
-#footer	{ text-align:left; padding:20px 0; clear:both; width:100%; min-width:980px;;; }
+#footer	{ text-align:left; padding:20px 0; clear:both; width:100%; min-width:600px;;; }
 #footer dl#footerOutline	{ margin:0px; line-height:150%;width:220px; }
 #footer dl#footerOutline dt	{ color: #d2d2d3; margin-bottom:8px;line-height:150%; }
 #footer dl#footerOutline dt img	{ margin-bottom:5px;max-width:220px; }
@@ -596,8 +595,8 @@ box-shadow: inset 0 1px 0 white; }
 /*-------------------------------------------*/
 /*	#siteBottom
 /*-------------------------------------------*/
-#siteBottom { text-shadow: 0 -1px #333; clear:both; padding:20px 0; font-size:88%; font-family:Arial, Helvetica, sans-serif; color:#d2d2d3; border-top:0px solid #8a898c; height:30px; width:100%; background-color:#474761; min-width:980px; }
-#siteBottomInner p { float: left; margin: 0 20px; }
+#siteBottom { text-shadow: 0 -1px #333; clear:both; padding:20px 0; font-size:88%; font-family:Arial, Helvetica, sans-serif; color:#d2d2d3; border-top:0px solid #8a898c; height:30px; width:100%; background-color:#474761; min-width:600px; }
+#siteBottomInner p { float: left; margin: 0 15px; }
 #siteBottomInner h5 { float: right; margin-right: 50px;}
 #siteBottom a	{ color: #d2d2d3; text-decoration:none; }
 #siteBottom #copy	{ text-align:center; }
@@ -729,7 +728,7 @@ background: linear-gradient(#fcfcfc, #d5e9cc);
 /* コンテンツ推奨サイズより大きい場合
 /*-------------------------------------------*/
 @media (min-width: 660px) { /* スクロール分余裕に20px */
-#header	{ width:250px; float:left; padding:0; }
+#header	{ width:250px; float:left; padding-top:15px; }
 #headerTop #site-description	{ line-height:150%; }
 #headerInner {}
 #headerInner a {}
@@ -789,7 +788,7 @@ body     { line-height:150%; }
 	visibility: hidden;
 }
 /* グラデーション（filter）を使用するとIE8でドロップダウンの動作に不具合が出る場合がある為画像を使用 */
-#gMenu { border-bottom-width: 0px; background: transparent; float: left; padding-top: 20px; height: 70px; width: 700px; }
+#gMenu { border-bottom-width: 0px; background: transparent; height: 70px; width: 700px; float: left; }
 #gMenu #gMenuInner.innerBox	{ margin:0px 3%;width:100%;}
 #gMenu.itemClose .menu,
 #gMenu.itemOpen .menu	{ display:block;  }
@@ -949,6 +948,10 @@ form#searchform input#searchsubmit	{ width:20%; }
 }
 .header-img img {
 	margin-bottom: 20px;
+}
+#facebook {
+	float: right;
+	margin-right: 20px;
 }
 /* side tower */
 
@@ -1110,7 +1113,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 	border-top: 1px dashed #999;
 }
 #top-content .top-shop {
-	width: 480px;
+	width: 460px;
 	float: left;
 	height: 320px;
 	padding: 10px 20px;
@@ -1143,7 +1146,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 }
 #top-content .top-faith,
 #top-content .top-magazine {
-	width: 240px;
+	width: 230px;
 	float: left;
 	height: 320px;
 	padding: 10px;
@@ -1156,6 +1159,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 #top-content .top-beer {
 	clear: both;
 	width: 300px;
+	padding: 10px 20px;
 }
 
 
@@ -1408,7 +1412,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 	margin: 0 290px;
 }
 #siteBottomInner {
-	width: 960px;
 	margin: auto;
+	max-width: 980px;
 }
 

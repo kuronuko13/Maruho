@@ -34,7 +34,6 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 	print '<link rel="stylesheet" type="text/css" media="all" href="'.$stylePathOldIe.'" />'."\n";
 	print '<![endif]-->'."\n";
 } ?>
-<meta id="viewport" name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <body <?php body_class(); ?>>
@@ -58,10 +57,6 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 <div id="header">
 <div id="headerInner" class="innerBox">
 
-<a href="https://www.facebook.com/maruho.sake">
-<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/toppage-img/btn_facebook.png">
-</a>
-
 <!-- [ #headLogo ] -->
 <?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 <<?php echo $heading_tag; ?> id="site-title">
@@ -82,7 +77,11 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 </div>
 <!-- [ /#header ] -->
 
-
+<div id="facebook">
+<a href="https://www.facebook.com/maruho.sake">
+<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/toppage-img/btn_facebook.png">
+</a>
+</div>
 <?php
 $gMenuExist = wp_nav_menu( array( 'theme_location' => 'Header' , 'fallback_cb' => '' , 'echo' => false ) ) ;
 if ($gMenuExist) { ?>
