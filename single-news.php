@@ -1,4 +1,4 @@
-<?php get_header(1); ?>
+<?php get_header(3); ?>
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
@@ -43,7 +43,7 @@ if ( is_user_logged_in() == TRUE ) { ?>
 <div id="nav-below" class="navigation">
 	<div class="nav-next"><?php next_post_link( '%link', '<< 次のお知らせ', TRUE ); ?></div>
 	<a href="<?php echo home_url('/'); ?>/list/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
-	<div class="nav-previous"><?php previous_post_link( '%link', '前のお知らせ', TRUE ); ?></div>
+	<div class="nav-previous"><?php previous_post_link( '%link', '前のお知らせ >>', TRUE ); ?></div>
 </div><!-- #nav-below -->
 
 </div>

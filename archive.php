@@ -82,13 +82,7 @@ if ( !$postType ) {
 
 <!-- [ #sideTower ] -->
 <div id="sideTower">
-	<?php
-	if ($postType == 'post') {
-		get_template_part('module_side_blog');
-	} else if ($postType == 'info') {
-		get_template_part('module_side_info');
-	} ?>
-	<?php get_sidebar(); ?>
+	<?php dynamic_sidebar('Other Sidebar'); ?>
 </div>
 <!-- [ /#sideTower ] -->
 </div>
