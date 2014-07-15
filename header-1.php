@@ -93,15 +93,11 @@ if ($gMenuExist) { ?>
 <?php } ?>
 
 <!--トップ画像の表示-->
-<div style="clear:both;" ><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/mind-img/img_mind.png"></div>
-
-<!-- [ #panList ] -->
-<div id="panList">
-<div id="panListInner" class="innerBox">
-<?php get_template_part('module_panList'); ?>
+<div class="header-img" style="clear:both;" >
+<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/mind-img/img_mind.png">
 </div>
-</div> 
-<!-- [ /#panList ] -->
+
+
 
 
 <div id="main">

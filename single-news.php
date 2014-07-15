@@ -1,4 +1,4 @@
-<?php get_header(3); ?>
+<?php get_header(1); ?>
 
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
@@ -41,9 +41,9 @@ if ( is_user_logged_in() == TRUE ) { ?>
 <?php biz_vektor_snsBtns(); ?>
 
 <div id="nav-below" class="navigation">
-	<div class="nav-next"><?php next_post_link( '%link', '<< 次のお知らせ', TRUE ); ?></div>
-	<a href="<?php echo home_url('/'); ?>/list/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
-	<div class="nav-previous"><?php previous_post_link( '%link', '前のお知らせ >>', TRUE ); ?></div>
+	<div class="nav-previous"><?php previous_post_link( '%link', '<< 前のお知らせ', TRUE ); ?></div>
+	<div class="nav-next"><?php next_post_link( '%link', '次のお知らせ >>', TRUE ); ?></div>
+	<a href="<?php echo home_url('/'); ?>/list/"><img class="below-img" src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
 </div><!-- #nav-below -->
 
 </div>
@@ -53,6 +53,12 @@ if ( is_user_logged_in() == TRUE ) { ?>
 
 </div>
 <!-- [ /#content ] -->
+
+<!-- [ #sideTower ] -->
+	<div id="side-news">
+		<?php dynamic_sidebar('Other Sidebar'); ?>
+	</div>
+<!-- [ /#sideTower ] -->
 
 </div>
 <!-- [ /#container ] -->
