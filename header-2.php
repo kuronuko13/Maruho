@@ -36,10 +36,10 @@ jQuery(function(){
     pager: false,
     mode: 'horizontal',
     speed: 1000,
-    autoHover: true,
+    infiniteLoop: true,
     pause: 3000,
     displaySlideQty: 3,
-    moveSlideQty: 4
+    moveSlideQty: 3
     });
 });
 </script>
