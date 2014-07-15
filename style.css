@@ -79,7 +79,7 @@ table,
 form, input {margin:0;padding:0; }
 hr  { display: none; }
 th	{ font-weight:lighter; }
-img { border: none; vertical-align: bottom; display: block; margin: auto;; }
+img { border: none; vertical-align: bottom;; }
 
 /*-------------------------------------------*/
 /*	基本設定

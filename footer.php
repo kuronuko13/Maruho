@@ -44,7 +44,7 @@
 	<div id="siteBottomInner" class="innerBox">
 		<p><b><?php biz_vektor_footerSiteName(); ?></b></p>
 		<p>〒555-0025<br>大阪市西区九条南2-16-11</p>
-		<p>TEL: 06-6583-2368<br>Email: xxxxxxxxx@xxxx.xxx</p>
+		<p>TEL: 06-6583-2368<br>Email: h.hohokabe@maruho-sake.com</p>
 		<h5>@copyright <?php biz_vektor_footerSiteName(); ?> 2014</h5>
 	</div>
 	</div>
