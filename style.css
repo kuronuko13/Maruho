@@ -71,7 +71,7 @@ BizVektor Global Edition WordPress theme is licensed under the GPL.
 /*-------------------------------------------*/
 /*	初期化
 /*-------------------------------------------*/
-*        { padding: 0px; font-size: 12px;; }
+*        { padding: 0px; font-size: 13px; font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック",sans-serif }
 ul, ol { list-style: none; }
 body,h1, h2, h3, h4, h5,p,
 ul, ol, li, dl, dt, dd,
@@ -85,7 +85,7 @@ img { border: none; vertical-align: bottom; }
 /*	基本設定
 /*-------------------------------------------*/
 
-body     { color: #333; text-align: center;font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+body     { color: #333; text-align: center;font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック",sans-serif }
 /* Text elements */
 body     { font-size:87.5%; line-height:130%; -webkit-text-size-adjust : 100%; }
 dt { font-weight: bold; }
@@ -232,7 +232,7 @@ float:left;
 #gMenu .menu	{ font-size: 13px;list-style: none; margin:0px 0px 0px;padding:0px; display:block; overflow:visible;border-top:1px solid #ccc;}
 #gMenu .menu li { position: relative;width:100%;display:block;text-shadow:0 1px #ffffff;border-bottom:1px solid #ccc; }
 #gMenu .menu li a	{ background:url(images/arrow_gray.png) right bottom no-repeat; color: #333; display: block; overflow:hidden;padding: 20px 15px 18px; margin:0px; line-height:140%; text-decoration: none; letter-spacing:0px; text-align:left; position:relative; }
-#gMenu .menu li a strong	{ font-weight:bold; }
+#gMenu .menu li a strong	{ font-weight:bold; font-size:13px; }
 #gMenu .menu li a span 		{ color:#5ead3c; display:block; font-size:10px; line-height:140%;letter-spacing:1px; font-family:verdana, Arial, Helvetica, sans-serif; }
 
 
@@ -291,7 +291,7 @@ float:left;
 #content h1 { font-size:2em;margin-bottom:2em; }
 #content h2,
 #content h1.contentTitle,
-#content h1.entryPostTitle	{ text-shadow: 0 1px #ffffff; clear:both; font-size:128.6%; padding:20px 15px 15px; font-weight:bold;color:#333; border-top: 1px solid #e5e5e5; border-bottom: 3px solid #5ead3c; position:relative; line-height:114.3%; background:url(images/line_wh.png) left top repeat-x; box-shadow: 0px 1px 3px rgba(0,0,0,0.20); }
+#content h1.entryPostTitle	{ text-shadow: 0 1px #ffffff; clear:both; font-size:128.6%; padding:20px 15px 15px; font-weight:bold;color:#333; border-top: 1px solid #e5e5e5; position:relative; line-height:114.3%; background: url(images/line_wh.png) left top repeat-x; box-shadow: 0px 1px 3px rgba(0,0,0,0.20); border-bottom: 3px solid #5ead3c; }
 #content h1.entryPostTitle	{ margin:0px 0px 5px; }
 #content h1,
 #content h2	{ margin:0; }
@@ -428,8 +428,8 @@ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .navigation a:visited { color: #888; text-decoration: none; }
 .navigation a:active,
 .navigation a:hover { color: #ff4b33; }
-.nav-previous { float: left; width: 90px;; }
-.nav-next { float: right; text-align: right; width: 90px; }
+.nav-previous { float: left; width: 110px;; }
+.nav-next { float: right; text-align: right; width: 110px; }
 #nav-above { margin: 0 0 18px 0; }
 #nav-above { display: none; }
 .paged #nav-above,
@@ -612,7 +612,7 @@ box-shadow: inset 0 1px 0 white; }
 /*-------------------------------------------*/
 #siteBottom { text-shadow: 0 -1px #333; clear:both; padding:20px 0; font-size:88%; font-family:Arial, Helvetica, sans-serif; color:#d2d2d3; border-top:0px solid #8a898c; height:30px; width:100%; background-color:#474761; min-width:600px; }
 #siteBottomInner p { float: left; margin: 0 15px; }
-#siteBottomInner h5 { float: right; margin-right: 50px;}
+#siteBottomInner h5 { float: right; margin-right: 50px; font-weight: normal;}
 #siteBottom a	{ color: #d2d2d3; text-decoration:none; }
 #siteBottom #copy	{ text-align:center; }
 #siteBottom #powerd,
@@ -743,7 +743,7 @@ background: linear-gradient(#fcfcfc, #d5e9cc);
 /* コンテンツ推奨サイズより大きい場合
 /*-------------------------------------------*/
 @media (min-width: 660px) { /* スクロール分余裕に20px */
-#header	{ width:250px; float:left; padding-top:15px; }
+#header	{ width:250px; float:left; padding-top:15px; margin-left:-10px; }
 #headerTop #site-description	{ line-height:150%; }
 #headerInner {}
 #headerInner a {}
@@ -803,7 +803,7 @@ body     { line-height:150%; }
 	visibility: hidden;
 }
 /* グラデーション（filter）を使用するとIE8でドロップダウンの動作に不具合が出る場合がある為画像を使用 */
-#gMenu { border-bottom-width: 0px; background: transparent; height: 70px; width: 700px; float: right; }
+#gMenu { border-bottom-width: 0px; background: transparent; height: 70px; width: 710px; float: right; }
 #gMenu #gMenuInner.innerBox	{ margin:0px 3%;width:100%;}
 #gMenu.itemClose .menu,
 #gMenu.itemOpen .menu	{ display:block;  }
@@ -817,7 +817,7 @@ body     { line-height:150%; }
 }
 
 #gMenu .assistive-text { position: absolute; top: -9000px; } /* display:noneだと読み上げない / 横にオフセットするとIEで読み込みまでの間表示される */
-#gMenu .menu li { float: left;width:106px; overflow:visible;border-bottom: none;box-shadow: inset 1px 0px 0px #fff; }
+#gMenu .menu li { float: left;width:110px; overflow:visible;border-bottom: none;box-shadow: inset 1px 0px 0px #fff; }
 #gMenu .menu li a	{ text-align:center;border-right:1px solid #e5e5e5; box-shadow: inset 1px 0px 0px #fff; }
 
 /* IE7のみドロップダウン非表示 */
@@ -845,8 +845,8 @@ body     { line-height:150%; }
 #gMenu .menu li:hover ul li:hover ul { border-top:1px solid #ccc; }
 
 #footerSiteMap .menu	{ font-size:12px; }
-#footerSiteMap .menu li	{ overflow:hidden;float: left;text-align: center;width: 130px;display: block; }
-#footerSiteMap .menu li	a	{ padding: 2px 20px 6px 0px; }
+#footerSiteMap .menu li	{ overflow:hidden;float: left;text-align: center;width: 130px;display: block;font-family: "游ゴシック","YuGothic"; }
+#footerSiteMap .menu li	a	{ padding: 2px 20px 6px 0px; font-family: "游ゴシック","YuGothic"; }
 #footerSiteMap .menu li	li 	{ width:100%; float:none; margin:0; }
 #footerSiteMap .menu li	li a	{ background-position:0px 3px; }
 #footerSiteMap .menu li	li li a	{ padding-left:10px; }
@@ -917,7 +917,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 
 #content .mainFootContact .mainFootBt a img	{ width:100%; }
 
-#footerSiteMap	{ width:900px;padding-top:0px; font-size:12px;margin:auto; }
+#footerSiteMap	{ width:900px;padding-top:0px; font-size:12px;margin:auto;font-family:"游ゴシック","YuGothic"; }
 #footer dl#footerOutline	{ float:left; }
 
 }
@@ -980,7 +980,8 @@ form#searchform input#searchsubmit	{ width:20%; }
 	-webkit-box-shadow: 0 3px 8px -5px #888888;
 	   -moz-box-shadow: 0 3px 8px -5px #888888;
 	        box-shadow: 0 3px 8px -5px #888888;
-	padding: 10px;;
+	padding: 10px;
+	text-align: center;;
 }
 #sideTower ul {
 
@@ -1038,10 +1039,9 @@ form#searchform input#searchsubmit	{ width:20%; }
 #side-event ul li a,
 #side-blog ul li,
 #side-blog ul li a {
-	text-decoration: none;
 	height: 20px;
 	font-size: 14px;
-	color: #48465e;
+	color: #3f3d7c;
 	padding: 10px 10px;
 }
 
@@ -1073,7 +1073,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 #top-content .top-news {
 	width: 160px;
 	float: left;
-	height: 320px;
+	height: 400px;
 	padding: 10px 20px;
 }
 #top-content .top-news .all,
@@ -1093,14 +1093,13 @@ form#searchform input#searchsubmit	{ width:20%; }
 }
 #top-content .top-news article a,
 #top-content .top-event article a {
-	text-decoration: none;
-	color: #48465e;
+	color: #3f3d7c;
 	font-size: 13px;;
 }
 #top-content .top-calendar {
 	width: 200px;
 	float: right;
-	height: 320px;
+	height: 400px;
 	padding: 10px 20px;;
 }
 #calendar-content,
@@ -1130,7 +1129,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 #top-content .top-shop {
 	width: 460px;
 	float: left;
-	height: 320px;
+	height: 400px;
 	padding: 10px 20px;
 }
 #top-content .top-news img,
@@ -1145,6 +1144,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 }
 #top-content .top-shop p {
 	font-size: 12px;
+	text-align: center;
 }
 #top-content .top-event {
 	clear: both;
@@ -1170,11 +1170,15 @@ form#searchform input#searchsubmit	{ width:20%; }
 #top-content .top-faith p,
 #top-content .top-magazine p {
 	font-size: 12px;
+	margin-left: 5px;
 }
 #top-content .top-beer {
 	clear: both;
 	width: 300px;
 	padding: 10px 20px;
+}
+#eo-widget-next-month {
+	text-align: right;
 }
 
 /* mind & sales */
@@ -1214,6 +1218,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 	line-height: 1;
 	padding: 10px;
 	margin: 10px 0;
+	vertical-align: bottom;;
 }
 #comabout-cominfo table td.firstChild {
 	text-align: center;
@@ -1301,7 +1306,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 	margin-left: 100px;
 	background-color: #474761;
 	font-size: 16px;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-family: "游ゴシック","YuGothic","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 #content-contact div.confirm p.firstChild {
 	border-top: 1px dashed #999;
@@ -1431,7 +1436,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 #shopinfo-content .busy-time {
 	width: 200px;
 	float: right;
-	margin-top: 90px;
+	margin-top: 130px;
 }
 #shopinfo-content .busy-time h3 {
 	margin-bottom: 10px;
@@ -1440,10 +1445,11 @@ form#searchform input#searchsubmit	{ width:20%; }
 	text-align: right;
 }
 #shopinfo-content .busy-day {
-	width: 200px;
+	width: 250px;
 	float: right;
-	height: 200px;
-	margin: 20px 50px 0 0;;
+	height: 250px;
+	margin: 20px 20px 0 0;
+	text-align: center;
 }
 #shopinfo-content .busy-day table {
 	width: 100%;

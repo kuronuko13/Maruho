@@ -81,9 +81,9 @@ if ( !$postType ) {
 	<!-- [ /#content ] -->
 
 <!-- [ #sideTower ] -->
-<div id="sideTower">
-	<?php dynamic_sidebar('Other Sidebar'); ?>
-</div>
+	<div id="side-blog">
+		<?php dynamic_sidebar('Other Sidebar'); ?>
+	</div>
 <!-- [ /#sideTower ] -->
 </div>
 <!-- [ /#container ] -->
