@@ -58,12 +58,9 @@ if ( is_user_logged_in() == TRUE ) { ?>
 <!-- [ /#content ] -->
 
 <!-- [ #sideTower ] -->
-<div id="sideTower">
-	<?php if (get_post_type() == 'post') {
-		get_template_part('module_side_blog');
-	} ?>
-	<?php get_sidebar(); ?>
-</div>
+	<div id="side-event">
+		<?php dynamic_sidebar('Other Sidebar'); ?>
+	</div>
 <!-- [ /#sideTower ] -->
 </div>
 <!-- [ /#container ] -->
