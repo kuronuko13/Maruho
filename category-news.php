@@ -9,7 +9,7 @@ if ( !$postType ) {
 <div id="container" class="innerBox">
 	<!-- [ #content ] -->
 	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/list-img/h_news.png" alt="お知らせ"><br/>
-	<?php query_posts('cat=6&post_type=post&paged='.$paged); ?>
+	<?php query_posts('cat=6&post_type=post&posts_per_page=10&paged='.$paged); ?>
 
 	<!-- [ #sideTower ] -->
 	<div id="sideBlog">

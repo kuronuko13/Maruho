@@ -14,10 +14,10 @@ if ( !$postType ) {
 <div id="container" class="innerBox">
 	<!-- [ #content ] -->
 	<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/blog-img/h_blog.png" alt="ブログ"><br/>
-	<?php query_posts('cat=5&post_type=post&paged='.$paged); ?>
+	<?php query_posts('cat=5&post_type=post&posts_per_page=10&paged='.$paged); ?>
 
 	<!-- [ #sideTower ] -->
-	<div id="sideBlog">
+	<div id="side-blog">
 		<?php dynamic_sidebar('Other Sidebar'); ?>
 	</div>
 	<!-- [ /#sideTower ] -->
@@ -41,6 +41,7 @@ if ( !$postType ) {
 			</article>
 		<?php endwhile; ?>
 	<?php endif;  ?>
+	<?php pagination($additional_loop->max_num_pages); ?>
 	</div>
 	<!-- [ /#content ] -->
 </div>
