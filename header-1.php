@@ -96,7 +96,13 @@ if ($gMenuExist) { ?>
 <img src="<?php echo get_template_directory_uri(); ?>/images/site-img/mind-img/img_mind.png">
 </div>
 
-
+<!-- [ #panList ] -->
+<div id="panList">
+<div id="panListInner" class="innerBox">
+<?php get_template_part('module_panList'); ?>
+</div>
+</div> 
+<!-- [ /#panList ] -->
 
 
 <div id="main">

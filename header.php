@@ -100,4 +100,12 @@ if ($gMenuExist) { ?>
 
 <div id="wrap">
 
+<!-- [ #panList ] -->
+<div id="panList">
+<div id="panListInner" class="innerBox">
+<?php get_template_part('module_panList'); ?>
+</div>
+</div> 
+<!-- [ /#panList ] -->
+
 <div id="main">

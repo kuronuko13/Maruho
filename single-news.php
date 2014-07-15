@@ -3,7 +3,7 @@
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
 	<!-- [ #content ] -->
-	<div id="content">
+	<div id="post-content">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 <!-- [ #post- ] -->
@@ -12,7 +12,8 @@
 	<time pubdate="pubdate" datetime="<?php the_time('Y-m-d-'); ?>">
 		<?php the_time(get_option('date_format')); ?><br/>
 	</time>
-	<?php the_title(); ?><?php edit_post_link(__('Edit', 'biz-vektor'), ' <span class="edit-link edit-item">[ ', ' ]' ); ?>
+	<h1><?php the_title(); ?></h1>
+	<?php edit_post_link(__('Edit', 'biz-vektor'), ' <span class="edit-link edit-item">[ ', ' ]' ); ?>
 	<!-- .entry-meta -->
 	<div class="entry-content post-content">
 		<?php the_content(); ?>
@@ -43,7 +44,7 @@ if ( is_user_logged_in() == TRUE ) { ?>
 <div id="nav-below" class="navigation">
 	<div class="nav-previous"><?php previous_post_link( '%link', '<< 前のお知らせ', TRUE ); ?></div>
 	<div class="nav-next"><?php next_post_link( '%link', '次のお知らせ >>', TRUE ); ?></div>
-	<a href="<?php echo home_url('/'); ?>/list/"><img class="below-img" src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
+	<a href="<?php echo home_url('/'); ?>/list/"><img class="below-post" src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
 </div><!-- #nav-below -->
 
 </div>
@@ -53,12 +54,6 @@ if ( is_user_logged_in() == TRUE ) { ?>
 
 </div>
 <!-- [ /#content ] -->
-
-<!-- [ #sideTower ] -->
-	<div id="side-news">
-		<?php dynamic_sidebar('Other Sidebar'); ?>
-	</div>
-<!-- [ /#sideTower ] -->
 
 </div>
 <!-- [ /#container ] -->

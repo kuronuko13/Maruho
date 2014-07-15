@@ -12,7 +12,8 @@
 	<time pubdate="pubdate" datetime="<?php the_time('Y-m-d-'); ?>">
 		<?php the_time(get_option('date_format')); ?><br/>
 	</time>
-	<?php the_title(); ?><?php edit_post_link(__('Edit', 'biz-vektor'), ' <span class="edit-link edit-item">[ ', ' ]' ); ?>
+	<h1><?php the_title(); ?></h1>
+	<?php edit_post_link(__('Edit', 'biz-vektor'), ' <span class="edit-link edit-item">[ ', ' ]' ); ?>
 	<!-- .entry-meta -->
 	<div class="entry-content post-content">
 		<?php the_content(); ?>
