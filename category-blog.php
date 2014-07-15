@@ -12,7 +12,7 @@ if ( !$postType ) {
 	<?php query_posts('cat=5&post_type=post&paged='.$paged); ?>
 
 	<!-- [ #sideTower ] -->
-	<div id="sideBlog">
+	<div id="side-blog">
 		<?php dynamic_sidebar('Other Sidebar'); ?>
 	</div>
 	<!-- [ /#sideTower ] -->

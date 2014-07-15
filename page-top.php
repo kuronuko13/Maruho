@@ -54,8 +54,10 @@ get_header(); ?>
 	</div>
 
 	<div class="top-shop">
-	<a href="<?php echo home_url('/'); ?>/shopinfo/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_shopinfo.png" alt="店舗紹介"></a>
-	<a href="<?php echo home_url('/'); ?>/shopinfo/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/img_shopinfo.png" alt="店舗紹介画像"></a>
+	<a href="<?php echo home_url('/'); ?>/shopinfo/">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_shopinfo.png" alt="店舗紹介"><br>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/img_shopinfo.png" alt="店舗紹介画像">
+	</a>
 	<p>常時70種類以上のクラフトビールとこだわりの地酒を取り揃えております。</p>
 	</div>
 
@@ -86,16 +88,18 @@ get_header(); ?>
 	</div>
 
 	<div class="top-faith">
-	<a href="<?php echo home_url('/'); ?>/mind/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_mind.png" alt="想い"></a>
-	<a href="<?php echo home_url('/'); ?>/mind/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/img_mind.png" alt="想い画像"></a>
-	<p>今の時代の酒屋として、変わるべき</p>
-	<p>もの変わらずに持ち続けるべき理念</p>
-	について<br/>
+	<a href="<?php echo home_url('/'); ?>/mind/">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_mind.png" alt="想い"><br>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/img_mind.png" alt="想い画像">
+	</a>
+	<p>今の時代の酒屋として、変わるべきもの変わらずに持ち続けるべき理念について</p>
 	</div>
 
 	<div class="top-magazine">
-	<a href="<?php echo home_url('/'); ?>/blog/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_blog.png" alt="マルホ便り"></a>
-	<a href="<?php echo home_url('/'); ?>/blog/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/img_blog.png" alt="マルホ便り画像"></a>
+	<a href="<?php echo home_url('/'); ?>/blog/">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_blog.png" alt="マルホ便り"><br>
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/img_blog.png" alt="マルホ便り画像">
+	</a>
 	<p>ブルワリーや蔵元訪問、日々のあれ</p>
 	<p>これについて書いています。</p>
 	</div>
