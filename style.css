@@ -79,7 +79,7 @@ table,
 form, input {margin:0;padding:0; }
 hr  { display: none; }
 th	{ font-weight:lighter; }
-img { border: none; vertical-align: bottom; }
+img { border: none; vertical-align: bottom; display: block; margin: auto;; }
 
 /*-------------------------------------------*/
 /*	基本設定
@@ -1054,7 +1054,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 }
 #content-page img,
 #content-contact img {
-	margin: 20px 0;
+	margin: 10px 0;
 }
 #content-contact .must {
 	margin: 0;
@@ -1256,7 +1256,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 
 /* contact */
 #contact p {
-	font-size: 14px;
+	font-size: 14px;;
 }
 #content-contact {
 	line-height: 2;
@@ -1266,7 +1266,9 @@ form#searchform input#searchsubmit	{ width:20%; }
 }
 #content-contact #mw_wp_form_mw-wp-form-300 table {
 	width: 100%;
-	border-top: 1px dashed #bbb;;;
+	border-top: 1px dashed #bbb;
+	margin-top: 10px;
+	padding-top: 10px;;;
 }
 #content-contact #mw_wp_form_mw-wp-form-300 table tr td {
 	font-size: 16px;
@@ -1307,6 +1309,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 	background-color: #474761;
 	font-size: 16px;
 	font-family: "游ゴシック","YuGothic","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	border: none;
 }
 #content-contact div.confirm p.firstChild {
 	border-top: 1px dashed #999;
@@ -1382,18 +1385,23 @@ form#searchform input#searchsubmit	{ width:20%; }
 #news-info {
 	float: left;
 	width: 450px;
-	height: 700px;
-	overflow: hidden;
+	height: 800px;
 }
 #event-info {
 	float: right;
 	width: 450px;
-	height: 700px;
-	overflow: hidden;
+	height: 800px;
 }
 #news-info img,
 #event-info img {
 	margin: 10px 0;
+}
+#news-info .content-scroll,
+#event-info .content-scroll {
+	width: 100%;
+	height: 550px;
+	overflow: auto;
+	margin-top: 20px;
 }
 #news-info article,
 #event-info article {
@@ -1449,7 +1457,6 @@ form#searchform input#searchsubmit	{ width:20%; }
 	float: right;
 	height: 250px;
 	margin: 20px 20px 0 0;
-	text-align: center;
 }
 #shopinfo-content .busy-day table {
 	width: 100%;
