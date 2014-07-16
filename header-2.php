@@ -31,12 +31,9 @@ wp_head();
 jQuery(function(){
     jQuery('.bxslider').bxSlider({
     auto : true,
-    autoControls: false,
-    controls: true,
     pager: false,
     mode: 'horizontal',
     speed: 1000,
-    infiniteLoop: true,
     pause: 3000,
     displaySlideQty: 3,
     moveSlideQty: 3
@@ -56,25 +53,6 @@ if (get_template_directory_uri() != get_stylesheet_directory_uri()){
 	print '<![endif]-->'."\n";
 } ?>
 
-<script src=”http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js” type=”text/javascript”></script>
-<script src=”<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.bxslider.min.js” type=”text/javascript”></script>
-<script type=”text/javascript”>
-jQuery(document).ready(function($){  
-$(function(){
-  $('.bxslider').bxSlider({
-  	auto : true,
-  	controls: false,
-  	mode: 'horizontal',
-  	speed: 2000,
-  	autoHover: true,
-  	pause: 3000,
-  	easing: 'swing',
-  	displaySlideQty: 3,
-  	moveSlideQty: 3 
-  });
-});
-});
-</script>
 </head>
 
 <body <?php body_class(); ?>>
