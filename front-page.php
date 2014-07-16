@@ -9,8 +9,10 @@ get_header(); ?>
 	<div id="top-content">
 
 	<div class="top-news">
-	<a href="<?php echo home_url('/'); ?>/list/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_news.png" alt="お知らせ"></a>
-	<a href="<?php echo home_url('/'); ?>/list/" class="all"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/btn_ichiran.png" alt="一覧"></a>
+	<a href="<?php echo home_url('/'); ?>/list/" class="all">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_news.png" alt="お知らせ" class="first">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/btn_ichiran.png" alt="一覧" class="event-all">
+	</a>
 	<?php query_posts('cat=6&post_type=post&posts_per_page=4'); ?>
 	<?php
 	if (have_posts()) : ?>
@@ -64,8 +66,10 @@ get_header(); ?>
 	
 
 	<div class="top-event">
-	<a href="<?php echo home_url('/'); ?>/list/"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_event.png" alt="イベント"></a>
-	<a href="<?php echo home_url('/'); ?>/list/" class="all"><img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/btn_ichiran.png" alt="一覧"></a>
+	<a href="<?php echo home_url('/'); ?>/list/" class="all">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/h_event.png" alt="イベント" class="first">
+		<img src="<?php echo get_template_directory_uri(); ?>/images/site-img/toppage-img/btn_ichiran.png" alt="一覧" class="event-all">
+	</a>
 	<?php query_posts('cat=7&post_type=post&posts_per_page=4'); ?>
 	<?php
 	if (have_posts()) : ?>

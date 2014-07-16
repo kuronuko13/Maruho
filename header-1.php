@@ -9,6 +9,8 @@
 <meta name="description" content="<?php getHeadDescription(); ?>" />
 <meta name="keywords" content="<?php biz_vektor_getHeadKeywords(); ?>" />
 <link rel="start" href="<?php echo site_url(); ?>" title="HOME" />
+<link rel="shortcut icon" href="http://maruho-sake.com/wp/wp-content/uploads/2014/07/favicon3.ico">
+
 <?php
 /* We add some JavaScript to pages with the comment form
  * to support sites with threaded comments (when in use).
