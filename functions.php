@@ -132,6 +132,19 @@ function biz_vektor_widgets_init() {
 		'after_title' => '</h2>'
 	));
 
+	// custum menu
+	add_theme_support( 'menu' );
+	
+	/*-------------------------------------------*/
+	/*	submenu
+	/*-------------------------------------------*/
+	/**/
+	add_filter('walker_nav_menu_start_el', 'description_in_nav_menu', 10, 4);
+	
+	function description_in_nav_menu($item_output, $item){
+		return preg_replace('/(<a.*?>[^<]*?)</', '$1' . "<p>{$item->attr_title}</p><", $item_output);
+	}
+
 }
 add_action( 'widgets_init', 'biz_vektor_widgets_init' );
 
@@ -735,4 +748,5 @@ function ignore_shortcode( $atts, $content = null ) {
     return null;
 }
 add_shortcode('ignore', 'ignore_shortcode');
+
 
