@@ -35,8 +35,9 @@ jQuery(function(){
     mode: 'horizontal',
     speed: 1000,
     pause: 3000,
-    displaySlideQty: 3,
-    moveSlideQty: 3
+    minSlides: 3,
+    maxSlides: 3,
+    slideWidth: 140
     });
 });
 </script>
