@@ -104,7 +104,7 @@ textarea { background: #f9f9f9; border: 1px solid #ccc; padding: 2px; font-size:
 	height: 150px;
 	width: 500px;
  }
-a         { overflow: hidden; color:#5ead3c; }
+a         { overflow: hidden; color:#3f3d7c; }
 a:hover,
 a:active  { color:#5ead3c; text-decoration:none; }
 a:hover img{opacity: .60; /* Standard: FF gt 1.5, Opera, Safari */
