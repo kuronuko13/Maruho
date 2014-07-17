@@ -17,6 +17,7 @@ if ( !$postType ) {
 	</div>
 	<!-- [ /#sideTower ] -->
 	
+	<?php query_posts('cat=5&post_type=post&posts_per_page=10&paged='.$paged); ?>
 	<div class="blog-post">
 	<?php if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>

@@ -1579,3 +1579,13 @@ form#searchform input#searchsubmit	{ width:20%; }
 	height: auto;
 	margin: 10px;
 }
+
+/* experience */
+.page-template-page-experience-php #container h1 {
+	margin: 10px 0;
+	border-bottom: 1px dashed #999;
+	font-size: 25px;
+	height: 38px;
+	padding: 5px 0;
+}
+
