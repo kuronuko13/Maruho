@@ -48,11 +48,11 @@ if ( is_404() ){
 } elseif ( is_single() ) {
 	// 投稿の場合
 	if ($postType == 'post') {
-		echo '<li>'.$postLabelName.' &raquo; </li>';
+		//echo '<li>'.$postLabelName.' &raquo; </li>';
 		$category = get_the_category();
 		$category_id = get_cat_ID( $category[0]->cat_name );
 		if ($category_id) :  // カスタム投稿タイプを追加した場合にカテゴリー指定が無い場合の為
-			echo '<li>'. get_category_parents( $category_id, TRUE, ' &raquo; ' ).'</li>';
+			//echo '<li>'. get_category_parents( $category_id, TRUE, ' &raquo; ' ).'</li>';
 		endif;
 	// カスタム投稿タイプのsingleページの場合
 	} else {

@@ -753,7 +753,7 @@ add_filter('widget_categories_args', 'my_theme_catexcept',10);
  
 function my_theme_catexcept($cat_args){ 
     // 除外するカテゴリのid 
-    $exclude_id = '6,7'; 
+    $exclude_id = '5,6,7'; 
     // 除外 
     $cat_args['exclude'] = $exclude_id; 
     // 返す 
@@ -762,7 +762,7 @@ function my_theme_catexcept($cat_args){
 
 function cat_limited_wp_get_archives( $where ) {
 	global $wpdb;
-	$cat_string = '6,7';
+	$cat_string = '5,6,7';
 	$where .= " AND $wpdb->posts.ID NOT IN ( SELECT tr.object_id FROM $wpdb->term_relationships AS tr INNER JOIN $wpdb->term_taxonomy AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id WHERE tt.taxonomy = 'category' AND tt.term_id IN ($cat_string) )";
 	return $where;
 }
