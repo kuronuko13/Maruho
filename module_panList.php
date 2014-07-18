@@ -86,18 +86,18 @@ if ( is_404() ){
 	echo '<li>'.single_cat_title('','', FALSE).'</li>';
 // ▼▼ カテゴリー
 } else if ( is_category() ) {
-	echo '<li>'.$postLabelName.' &raquo; </li>';
+	//echo '<li>'.$postLabelName.' &raquo; </li>';
 	// カテゴリー情報を取得して$catに格納
 	$cat = get_queried_object();
 	// parent が 0 の場合 = 親カテゴリーが存在する場合
-	if($cat -> parent != 0):
-		// 祖先のカテゴリー情報を逆順で取得
-		$ancestors = array_reverse(get_ancestors( $cat -> cat_ID, 'category' ));
-		// 祖先階層の配列回数分ループ
-		foreach($ancestors as $ancestor):
-			echo '<li><a href="'.get_category_link($ancestor).'">'.get_cat_name($ancestor).'</a> &raquo; </li>';
-		endforeach;
-	endif;
+	// if($cat -> parent != 0):
+	// 	// 祖先のカテゴリー情報を逆順で取得
+	// 	$ancestors = array_reverse(get_ancestors( $cat -> cat_ID, 'category' ));
+	// 	// 祖先階層の配列回数分ループ
+	// 	foreach($ancestors as $ancestor):
+	// 		echo '<li><a href="'.get_category_link($ancestor).'">'.get_cat_name($ancestor).'</a> &raquo; </li>';
+	// 	endforeach;
+	//endif;
 	echo '<li>'. $cat -> cat_name. '</li>';	
 // ▼▼ タグ
 } elseif ( is_tag() ) {
@@ -114,15 +114,15 @@ if ( is_404() ){
 } elseif ( is_archive() && (!is_category() || !is_tax()) ) {
 	// 投稿の場合
 	if ($postType == 'post') {
-		echo '<li>'.$postLabelName;
+		//echo '<li>'.$postLabelName;
 	// カスタム投稿タイプの場合
 	} else {
-		echo '<li>'.$postTypeName;
+		//echo '<li>'.$postTypeName;
 	}
 	if (is_month() || is_year()) {
-		echo ' &raquo; ';
+		//echo ' &raquo; ';
 	}
-	echo '</li>';
+	//echo '</li>';
 	if (is_year()){
 		echo "<li>".sprintf( __( 'Yearly Archives: %s', 'biz-vektor' ), get_the_date( _x( 'Y', 'yearly archives date format', 'biz-vektor' ) ) )."</li>";
 	} else if (is_month()){
