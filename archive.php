@@ -49,7 +49,7 @@ if ( !$postType ) {
 	</div>
 
 	<div class="infoList">
-	<?php
+	<!--<?php
 	$options = biz_vektor_get_theme_options();
 	if ($postType == 'info') : ?>
 		<?php if ( $options['listInfoArchive'] == 'listType_set' ) : ?>
@@ -75,31 +75,22 @@ if ( !$postType ) {
 				<?php get_template_part('module_loop_post'); ?>
 			<?php endwhile; ?>
 			</ul>
-		<?php } ?>
+		<?php } ?> 
 
-	<?php endif; // $postType == 'info' ?>
+	<?php endif; // $postType == 'info' ?> -->
 	</div><!-- [ /.infoList ] -->
-	<?php query_posts($query_string.'post_type=post&posts_per_page=10&paged='.$paged); ?>
+	<?php query_posts('cat=5&post_type=post&posts_per_page=-1&nopaging=true'); ?>
 
 	<?php if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article class="blog-article">
-			<a href="<?php the_permalink(); ?>" class="blog-archive">
-				<?php the_post_thumbnail('large_thumbnail', array('alt' => the_title_attribute('echo=0'), 'title' => the_title_attribute('echo=0'))); ?>
-			</a>
-				<header>
 					<time pubdate="pubdate" datetime="<?php the_time('Y-m-d-'); ?>">
 					<?php the_time(get_option('date_format')); ?>
 					</time>
 					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-				</header>
-				<section>
-					<?php the_excerpt(); ?>
-				</section>
 			</article>
 		<?php endwhile; ?>
 	<?php endif;  ?>
-	<?php pagination($additional_loop->max_num_pages); ?>
 	</div>
 	<!-- [ /#content ] -->
 
