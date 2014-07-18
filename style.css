@@ -1442,7 +1442,30 @@ form#searchform input#searchsubmit	{ width:20%; }
 	padding: 5px 0;
 	font-size: 25px;
 }
-
+#content .archive-content {
+	width: 100%;
+	height: 800px;
+	overflow: scroll;
+	margin-bottom: 20px;
+}
+#content .archive-content article {
+	height: 20px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #bbb;
+}
+#content .archive-content article time {
+	float: left;
+	font-size: 14px;
+	margin-right: 20px;
+}
+#content .archive-content article h1 {
+	margin-top: -5px;
+	font-weight: normal;
+}
+#content .return-blog {
+	width: 102px;
+	margin: auto;
+}
 
 /* list page */
 #news-info {

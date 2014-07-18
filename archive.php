@@ -86,6 +86,8 @@ if ( !$postType ) {
 
 	<?php endif; // $postType == 'info' ?> -->
 	</div><!-- [ /.infoList ] -->
+
+	<div class="archive-content">
 	<?php $query = 'cat=5&post_type=post&posts_per_page=-1&year='.$a_year.'&monthnum='.$a_month.'nopaging=true' ?>
 	<?php query_posts($query); ?>
 	<?php if (have_posts()) : ?>
@@ -98,7 +100,10 @@ if ( !$postType ) {
 			</article>
 		<?php endwhile; ?>
 	<?php endif;  ?>
+	</div>
+	<div class="return-blog">
 	<a href="<?php echo home_url('/'); ?>/blog/"><img class="below-post" src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
+	</div>
 	</div>
 	<!-- [ /#content ] -->
 
