@@ -467,12 +467,12 @@ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 #content .infoList ul li	{ border-bottom:1px dotted #ccc; padding:12px 0px;list-style:none;margin-bottom:0px; }
 #content .infoList ul li a	{  }
 #content .infoList ul li a:hover	{ color:#f00; }
-#content .infoList .infoDate	{ margin-right:8px; color:#dd0000; }
+#content .infoList .infoDate	{ margin-right:8px; color:#000; }
 #content .infoList .infoCate a	{ color:#666;margin-right:4px; background-color:#efefef;  padding:1px 5px 2px;  position:relative;border:1px solid #e5e5e5;top:-2px; }
 #content .infoList .infoCate a	{ font-size:10px;line-height:14px; text-decoration:none; font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック",sans-serif; }
 #content .infoList .infoCate a:hover	{ background-color:#3f3d7c; color:#fff;text-decoration:none;}
 #content .infoList ul li .infoTxt	{ margin-top: 3px; display:block; overflow:hidden; clear:both; }
-#content .infoList ul li .infoTxt a	{ text-decoration:none; color:#333; display:block;overflow:hidden; }
+#content .infoList ul li .infoTxt a	{ text-decoration:none; color:#3f3d7c; display:block;overflow:hidden; }
 #content .infoList ul li .infoTxt a:hover	{ color:#5ead3c; text-decoration:underline; }
 
 /*				.infoListBox
