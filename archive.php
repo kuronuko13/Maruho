@@ -10,6 +10,7 @@ if ( !$postType ) {
 	<!-- [ #content ] -->
 	<div id="content">
 	
+	<div class="archive-title">
 	<?php
 /*-------------------------------------------*/
 /*	Archive title
@@ -45,7 +46,9 @@ if ( !$postType ) {
 /*	Archive post list
 /*-------------------------------------------*/
 	//?>
-	<!-- <div class="infoList">
+	</div>
+
+	<div class="infoList">
 	<?php
 	$options = biz_vektor_get_theme_options();
 	if ($postType == 'info') : ?>
@@ -75,7 +78,7 @@ if ( !$postType ) {
 		<?php } ?>
 
 	<?php endif; // $postType == 'info' ?>
-	</div> --><!-- [ /.infoList ] -->
+	</div><!-- [ /.infoList ] -->
 	<?php query_posts($query_string.'post_type=post&posts_per_page=10&paged='.$paged); ?>
 
 	<?php if (have_posts()) : ?>

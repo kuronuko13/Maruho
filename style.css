@@ -470,7 +470,7 @@ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 #content .infoList .infoDate	{ margin-right:8px; color:#dd0000; }
 #content .infoList .infoCate a	{ color:#666;margin-right:4px; background-color:#efefef;  padding:1px 5px 2px;  position:relative;border:1px solid #e5e5e5;top:-2px; }
 #content .infoList .infoCate a	{ font-size:10px;line-height:14px; text-decoration:none; font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック",sans-serif; }
-#content .infoList .infoCate a:hover	{ background-color:#5ead3c; color:#fff;text-decoration:none;}
+#content .infoList .infoCate a:hover	{ background-color:#3f3d7c; color:#fff;text-decoration:none;}
 #content .infoList ul li .infoTxt	{ margin-top: 3px; display:block; overflow:hidden; clear:both; }
 #content .infoList ul li .infoTxt a	{ text-decoration:none; color:#333; display:block;overflow:hidden; }
 #content .infoList ul li .infoTxt a:hover	{ color:#5ead3c; text-decoration:underline; }
@@ -1352,6 +1352,18 @@ form#searchform input#searchsubmit	{ width:20%; }
 	height: 46px;
 	padding: 0 50px;
 }
+#mw_wp_form_mw-wp-form-300 table tbody tr.lastChild .lastBtn .firstChild {
+	background: url('images/site-img/contact-img/btn_contact2.png') no-repeat;
+	font-size: 0;
+	width: 130px;
+	height: 46px;
+}
+#mw_wp_form_mw-wp-form-300 table tbody tr.lastChild .lastBtn .lastChild {
+	background: url('images/site-img/contact-img/btn_contact.png') no-repeat;
+	font-size: 0;
+	width: 230px;
+	height: 46px;
+}
 #mw_wp_form_mw-wp-form-300.mw_wp_form_input input[type="submit"] {
 	margin-left: 100px;
 	font-family: "游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック",sans-serif;
@@ -1582,6 +1594,26 @@ form#searchform input#searchsubmit	{ width:20%; }
 }
 .great-font {
 	font-size: 18px;
+}
+#content .archive-title {
+	border-bottom: 1px solid #999;
+	width: 330px;
+	padding-bottom: 1px;
+}
+#content h1.contentTitle {
+	clear: both;
+	font-size: 18px; padding: 20px 15px 15px;
+	font-weight: bold;
+	color: #333;
+	border-top: none;
+	position: relative;
+	line-height: 114.3%;
+	box-shadow: none;
+	border-bottom: 1px solid #000;
+	width: 300px;
+	background: url(images/line_wh.png) left top repeat-x;
+	text-shadow: 0 1px #ffffff;
+	font-family: '明朝体';
 }
 
 /* others */
