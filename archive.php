@@ -5,6 +5,13 @@ if ( !$postType ) {
 	$taxonomy = get_queried_object()->taxonomy;
 	$postType = get_taxonomy( $taxonomy )->object_type[0];
 } ?>
+
+<?php 
+	$a_month = get_query_var('monthnum');
+
+	$a_year = get_query_var('year');
+
+?>
 <!-- [ #container ] -->
 <div id="container" class="innerBox">
 	<!-- [ #content ] -->
@@ -79,8 +86,8 @@ if ( !$postType ) {
 
 	<?php endif; // $postType == 'info' ?> -->
 	</div><!-- [ /.infoList ] -->
-	<?php query_posts('cat=5&post_type=post&posts_per_page=-1&nopaging=true'); ?>
-
+	<?php $query = 'cat=5&post_type=post&posts_per_page=-1&year='.$a_year.'&monthnum='.$a_month.'nopaging=true' ?>
+	<?php query_posts($query); ?>
 	<?php if (have_posts()) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article class="blog-article">
@@ -91,6 +98,7 @@ if ( !$postType ) {
 			</article>
 		<?php endwhile; ?>
 	<?php endif;  ?>
+	<a href="<?php echo home_url('/'); ?>/blog/"><img class="below-post" src="<?php echo get_template_directory_uri(); ?>/images/site-img/blogpost-img/btn_return.png" alt="一覧に戻る"></a>
 	</div>
 	<!-- [ /#content ] -->
 
