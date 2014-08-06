@@ -333,6 +333,7 @@ float:left;
 }
 #content h3	{ text-shadow: 0 1px #ffffff; box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1); position: relative; clear:both; font-size:18px;margin:40px 0px 35px; padding:10px 10px 7px; background-color:#f4f4f4;border-left: 3px solid #5ead3c;  }
 #content h4 { padding-top: 8px; text-shadow: 0 1px #ffffff; padding-bottom: 5px; color:#5ead3c; position: relative; clear:both; font-size:18px;margin:30px 0px 20px; border-top:1px solid #eeeeee; border-bottom:1px solid #eeeeee; background: url(images/line_wh.png) left top repeat-x; }
+#post-content h4 { padding-top: 8px; text-shadow: 0 1px #ffffff; padding-bottom: 5px; color:#5ead3c; position: relative; clear:both; font-size:18px;margin:30px 0px 20px; border-top:1px solid #eeeeee; border-bottom:1px solid #eeeeee; background: url(images/line_wh.png) left top repeat-x; }
 #content h5 { color:#5ead3c; clear:both; font-size:16px;margin:30px 0px 20px; padding:10px 0px 5px; border-bottom:1px dotted #eeeeee; }
 #content h6 { clear:both; font-size:14px;margin:30px 0px 20px; padding:10px 0px 0px;}
 
@@ -1427,6 +1428,9 @@ form#searchform input#searchsubmit	{ width:20%; }
 #post-content {
 	width: 100%;
 }
+.single-post #post-content p {
+	color: #000;
+}
 .single-post #post-content div.cool {
 	border: none;
 	padding: 10px 20px;
@@ -1434,7 +1438,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 	background-color: #48465e;
 	margin:20px 0;
 }
-.single-post #post-content h2 {
+.single-post #post-content span {
 	color: #eee;
 	font-size: 18px;
 	border-left: 5px solid;
@@ -1448,10 +1452,23 @@ form#searchform input#searchsubmit	{ width:20%; }
 	padding: 5px 0;
 	font-size: 25px;
 }
+.single-post #post-content div.point {
+	border-bottom: 1px dotted #999;
+	width: 310px;
+}
+.single-post #post-content div.point h4 {
+	box-shadow: none;
+	border-top: none;
+	width: 300px;
+	border-bottom: 1px dotted #999;
+	color: #000;
+	padding-left: 10px;
+	margin-bottom: 1px;
+}
 #content .archive-content {
 	width: 100%;
 	height: 800px;
-	overflow: scroll;
+	overflow: auto;
 	margin-bottom: 20px;
 }
 #content .archive-content article {
