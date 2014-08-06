@@ -9,10 +9,10 @@ get_header(1); ?>
 
 <!-- [ #sideTower ] -->
 <div id="sideTower">
-	<h2>会社概要</h2>
+	<h2><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/comabout-img/h_comabout_side.png" /></h2>
 	<ul>
-		<li><a href="#comabout-cominfo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />会社情報</a></li>
-		<li><a href="#comabout-history"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />会社沿革</a></li>
+		<li><a href="#comabout-cominfo"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/comabout-img/nav_cominfo_side.png" /></a></li>
+		<li><a href="#comabout-history"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/comabout-img/nav_history_side.png" /></a></li>
 	</ul>
 </div>  
 <!-- [ /#sideTower ] -->

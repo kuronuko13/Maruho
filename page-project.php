@@ -9,13 +9,13 @@ get_header(1); ?>
 
 <!-- [ #sideTower ] -->
 <div id="sideTower">
-	<h2>事業内容</h2>
+	<h2><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/project-img/h_project_side.png" /></h2>
 	<ul>
-		<li><a href="#project-retail"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />小売販売</a></li>
-		<li><a href="#project-onlineresale"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />通信販売</a></li>
-		<li><a href="#project-wholesale"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />飲食店御</a></li>
-		<li><a href="#project-standingbar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />立ち飲み</a></li>
-		<li><a href="#project-event"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />イベント運営</a></li>
+		<li><a href="#project-retail"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/project-img/nav_retail_side.png" /></a></li>
+		<li><a href="#project-onlineresale"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/project-img/nav_onlineresale_side.png" /></a></li>
+		<li><a href="#project-wholesale"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/project-img/nav_wholesale_side.png" /></a></li>
+		<li><a href="#project-standingbar"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/project-img/nav_standingbar_side.png" /></a></li>
+		<li><a href="#project-event"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/project-img/nav_event_side.png" /></a></li>
 	</ul>
 </div>  
 <!-- [ /#sideTower ] -->

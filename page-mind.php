@@ -9,10 +9,10 @@ get_header(1); ?>
 
 <!-- [ #sideTower ] -->
 <div id="sideTower">
-	<h2>想い</h2>
+	<h2><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/mind-img/h_mind_side.png" /></h2>
 	<ul>
-		<li><a href="#mind-mision"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />使命</a></li>
-		<li><a href="#mind-policy"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" />方針</a></li>
+		<li><a href="#mind-mision"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/mind-img/nav_mission_side.png" /></a></li>
+		<li><a href="#mind-policy"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/mind-icon.png" /><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/site-img/mind-img/nav_policy_side.png" /></a></li>
 	</ul>
 </div>  
 <!-- [ /#sideTower ] -->

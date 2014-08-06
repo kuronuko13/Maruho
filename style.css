@@ -1018,7 +1018,7 @@ form#searchform input#searchsubmit	{ width:20%; }
 	-webkit-box-shadow: 0 3px 8px -5px #888888;
 }
 #sideTower ul li img {
-	margin: 0 40px;
+	margin: 0 0 0 40px;
 }
 #sideTower ul li a { 
 	text-decoration: none;
